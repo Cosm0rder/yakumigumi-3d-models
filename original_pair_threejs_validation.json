@@ -1,0 +1,1566 @@
+{
+  "schema": "yakumigumi-original2-threejs-public-validation-v1",
+  "timestampUTC": "2026-10-06T22:23:52.614Z",
+  "engine": "Three.js r180",
+  "all_runtime_checks_passed": true,
+  "viewerMainSHA256": "0080c36311146e6375daf2526c3b101e28187aeaf660e80db4f7271ff0895814",
+  "cameraHarnessMainSHA256": "2e24d0be0153f39066537e9287e9c6b8d7b5267634a21d910bb13b588dfa317d",
+  "modelReleaseURL": "https://github.com/Cosm0rder/yakumigumi-3d-models/releases/tag/v1.1.0",
+  "modelZIP_SHA256": "593d6663850e75c0cf3370fb8f9b13d05943d9c640d37a9981585f45dcf77dcd",
+  "byteIdentityProof": "Anonymous published ZIP SHA256 matched local ZIP; ZIP manifest and member hashes matched tested local GLBs; browser hashed the same buffers passed to GLTFLoader.",
+  "specifications": {
+    "GLBPaint": "Baked COLOR_0 vertex colors plus PBR materials; zero raster texture maps/references expected. All 6 Ginger and 19 Garlic meshes have finite color attributes used by materials.",
+    "nativePNGs": "The 3 native paint PNGs remain in the model ZIP; this GLB browser test checks vertex colors rather than loading those PNGs.",
+    "BlenderAuthoritative": true,
+    "GarlicFacialDrivers": "Blender only; GLB shows the exported initial evaluated expression.",
+    "sampleTimesSeconds": [
+      0.08333333333333333,
+      0.5833333333333334,
+      1.0833333333333333
+    ],
+    "publishedModelAssetsModifiedDuringBrowserTest": false
+  },
+  "consoleObservationScope": {
+    "source": "Supported Tab.dev.logs messages exposed during actual load, poses, play/stop, camera, and resize; observed lists empty.",
+    "observedConsoleErrors": [],
+    "observedShaderErrorLogs": [],
+    "observedUnhandledRejectionLogs": [],
+    "observedContextLostLogs": [],
+    "dedicatedRawExceptionOrContextLossListener": false,
+    "simulatedContextLoss": false,
+    "networkRequestsFullyTraced": false,
+    "scopeNote": "No errors appeared in available console capture and renders stayed active. This does not claim an independent raw browser event trace."
+  },
+  "viewerFix": {
+    "problem": "Fixed camera distance cropped limbs on narrow/mobile canvases.",
+    "correction": "Fit distance adapts to viewport aspect/FOV, with margin/depth and relative user zoom preserved.",
+    "verifiedFixed": true,
+    "testedWidths": "Desktop, requested 821px (actual innerWidth 822), and 390px mobile.",
+    "existingModelReleaseAssetsReplaced": false
+  },
+  "characters": {
+    "ginger": {
+      "runtime": {
+        "model": {
+          "label": "しょうがちゃん",
+          "source": "v1.1.0/glb/Ginger_rigged.glb",
+          "testedGLBSha256": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2",
+          "testedGLBBytes": 26312140,
+          "clipName": "Ginger_FK_motion_check",
+          "clipDurationSeconds": 2.0833333,
+          "clipTrackCount": 18
+        },
+        "frameMapping": "Original exported GLB timestamps preserve Blender frames: 1/7/13 at 12 fps -> 1/12, 7/12, 13/12 seconds",
+        "structure": {
+          "skinnedMeshCount": 6,
+          "meshCount": 6,
+          "uniqueBones": [
+            "root",
+            "body",
+            "armL",
+            "armR",
+            "legL",
+            "legR"
+          ],
+          "canonicalBones": [
+            "root",
+            "body",
+            "arm.L",
+            "arm.R",
+            "leg.L",
+            "leg.R"
+          ],
+          "skeletonJointCounts": [
+            {
+              "mesh": "Cocoa_oval_eyeL",
+              "joints": 6
+            },
+            {
+              "mesh": "Cocoa_oval_eyeR",
+              "joints": 6
+            },
+            {
+              "mesh": "Eye_highlightL",
+              "joints": 6
+            },
+            {
+              "mesh": "Eye_highlightR",
+              "joints": 6
+            },
+            {
+              "mesh": "Ginger_continuous_seamless_body_limbs_crown",
+              "joints": 6
+            },
+            {
+              "mesh": "Short_cocoa_mouth",
+              "joints": 6
+            }
+          ]
+        },
+        "textures": [],
+        "vertexColors": [
+          {
+            "mesh": "Cocoa_oval_eyeL",
+            "colorAttributePresent": true,
+            "colorVertices": 2048,
+            "positionVertices": 2048,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.0310017,
+              0.0100009,
+              0.0035004
+            ],
+            "channelMax": [
+              0.0349988,
+              0.0119994,
+              0.0044997
+            ]
+          },
+          {
+            "mesh": "Cocoa_oval_eyeR",
+            "colorAttributePresent": true,
+            "colorVertices": 2047,
+            "positionVertices": 2047,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.0310018,
+              0.0100009,
+              0.0035005
+            ],
+            "channelMax": [
+              0.0349988,
+              0.0119994,
+              0.0044997
+            ]
+          },
+          {
+            "mesh": "Eye_highlightL",
+            "colorAttributePresent": true,
+            "colorVertices": 576,
+            "positionVertices": 576,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.7,
+              0.67,
+              0.64
+            ],
+            "channelMax": [
+              0.7,
+              0.67,
+              0.64
+            ]
+          },
+          {
+            "mesh": "Eye_highlightR",
+            "colorAttributePresent": true,
+            "colorVertices": 576,
+            "positionVertices": 576,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.7,
+              0.67,
+              0.64
+            ],
+            "channelMax": [
+              0.7,
+              0.67,
+              0.64
+            ]
+          },
+          {
+            "mesh": "Ginger_continuous_seamless_body_limbs_crown",
+            "colorAttributePresent": true,
+            "colorVertices": 390341,
+            "positionVertices": 390341,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.49232,
+              0.27336,
+              0.08024
+            ],
+            "channelMax": [
+              0.6256,
+              0.595,
+              0.5236
+            ]
+          },
+          {
+            "mesh": "Short_cocoa_mouth",
+            "colorAttributePresent": true,
+            "colorVertices": 2046,
+            "positionVertices": 2046,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.031003,
+              0.0100015,
+              0.0035008
+            ],
+            "channelMax": [
+              0.034997,
+              0.0119985,
+              0.0044992
+            ]
+          }
+        ],
+        "expectedEmbeddedTextureCount": 0,
+        "loaderErrors": [],
+        "jointRotationDeltaRadiansFromRest": [
+          {
+            "root": 0,
+            "body": 0,
+            "arm.L": 0,
+            "arm.R": 0,
+            "leg.L": 0,
+            "leg.R": 0
+          },
+          {
+            "root": 0,
+            "body": 0,
+            "arm.L": 0.4363323,
+            "arm.R": 0.4363323,
+            "leg.L": 0,
+            "leg.R": 0
+          },
+          {
+            "root": 0,
+            "body": 0,
+            "arm.L": 0,
+            "arm.R": 0,
+            "leg.L": 0.2617993,
+            "leg.R": 0.2617993
+          }
+        ],
+        "checks": {
+          "loaded": true,
+          "expectedClipPresent": true,
+          "skinnedMeshesPresent": true,
+          "expectedSixBonesPresent": true,
+          "finiteDeformedVertices": true,
+          "armsPoseChangesVertices": true,
+          "legsPoseChangesVertices": true,
+          "bothArmJointRotationsChange": true,
+          "bothLegJointRotationsChange": true,
+          "allReferencedTextureImagesReady": true,
+          "loaderReportedNoMissingResources": true,
+          "expectedVertexPaintAndMaterialCount": true,
+          "bakedVertexColorsPresentFiniteAndUsed": true,
+          "noRasterMapsExpectedOrMissing": true,
+          "independentlyWeightedLeftAndRightArmsDeform": true,
+          "independentlyWeightedLeftAndRightLegsDeform": true
+        },
+        "samples": [
+          {
+            "label": "rest",
+            "blenderFrame": 1,
+            "timeSeconds": 0.08333333333333333,
+            "actualActionTime": 0.0833333,
+            "nonFiniteVertices": 0,
+            "maximumVertexDeltaFromRest": 0,
+            "limbDeformation": {
+              "arm.L": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "arm.R": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.L": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.R": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              }
+            },
+            "worldBounds": {
+              "min": [
+                -0.6990811,
+                0.0103254,
+                -0.3463419
+              ],
+              "max": [
+                0.6566178,
+                1.5016515,
+                0.3463419
+              ],
+              "size": [
+                1.3556989,
+                1.4913261,
+                0.6926838
+              ]
+            }
+          },
+          {
+            "label": "arms",
+            "blenderFrame": 7,
+            "timeSeconds": 0.5833333333333334,
+            "actualActionTime": 0.5833333,
+            "nonFiniteVertices": 0,
+            "maximumVertexDeltaFromRest": 0.1370613,
+            "limbDeformation": {
+              "arm.L": {
+                "dominantWeightedVertices": 9886,
+                "movedVertices": 9886,
+                "maximumVertexDeltaFromRest": 0.1370613
+              },
+              "arm.R": {
+                "dominantWeightedVertices": 9310,
+                "movedVertices": 9310,
+                "maximumVertexDeltaFromRest": 0.1204199
+              },
+              "leg.L": {
+                "dominantWeightedVertices": 9693,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.R": {
+                "dominantWeightedVertices": 7540,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              }
+            },
+            "worldBounds": {
+              "min": [
+                -0.6453753,
+                0.0103254,
+                -0.3463419
+              ],
+              "max": [
+                0.6069212,
+                1.5016515,
+                0.3463419
+              ],
+              "size": [
+                1.2522965,
+                1.4913261,
+                0.6926838
+              ]
+            }
+          },
+          {
+            "label": "legs",
+            "blenderFrame": 13,
+            "timeSeconds": 1.0833333333333333,
+            "actualActionTime": 1.0833333,
+            "nonFiniteVertices": 0,
+            "maximumVertexDeltaFromRest": 0.0666097,
+            "limbDeformation": {
+              "arm.L": {
+                "dominantWeightedVertices": 9886,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "arm.R": {
+                "dominantWeightedVertices": 9310,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.L": {
+                "dominantWeightedVertices": 9693,
+                "movedVertices": 9693,
+                "maximumVertexDeltaFromRest": 0.0666097
+              },
+              "leg.R": {
+                "dominantWeightedVertices": 7540,
+                "movedVertices": 7540,
+                "maximumVertexDeltaFromRest": 0.0564951
+              }
+            },
+            "worldBounds": {
+              "min": [
+                -0.6990811,
+                -0.0114666,
+                -0.3463419
+              ],
+              "max": [
+                0.6566178,
+                1.5016515,
+                0.3463419
+              ],
+              "size": [
+                1.3556989,
+                1.5131181,
+                0.6926838
+              ]
+            }
+          }
+        ]
+      },
+      "browserChecks": {
+        "allSixteenRuntimeChecksPass": true,
+        "publishedGLBBytesAndSHA256Match": true,
+        "playAdvances": true,
+        "stopStable": true,
+        "cameraFrontObliqueSide": true,
+        "cameraDrag": true,
+        "cameraWheel": true,
+        "allMeasuredCameraProjectionsFinite": true,
+        "desktopBreakpointMobileResizeFits": true,
+        "allSettledRendererDimensionsAndAspectMatch": true,
+        "observedConsoleErrorsNone": true,
+        "visualPaintFaceShapeAndThreePosesConfirmed": true
+      },
+      "playback": {
+        "playA": {
+          "playing": true,
+          "actionTime": 1.1333333,
+          "duration": 2.0833333
+        },
+        "playB": {
+          "playing": true,
+          "actionTime": 1.8167333,
+          "duration": 2.0833333
+        },
+        "stopA": {
+          "playing": false,
+          "actionTime": 1.8667333,
+          "duration": 2.0833333
+        },
+        "stopB": {
+          "playing": false,
+          "actionTime": 1.8667333,
+          "duration": 2.0833333
+        }
+      },
+      "camera": {
+        "front": {
+          "aspect": 1.4143583,
+          "position": [
+            -0.0212317,
+            0.9077974,
+            3.0336493
+          ],
+          "target": [
+            -0.0212317,
+            0.7559884,
+            0
+          ],
+          "radius": 3.0374454,
+          "yaw": 0,
+          "pitch": 0.05,
+          "projectionMatrixFinite": true
+        },
+        "oblique": {
+          "aspect": 1.4143583,
+          "position": [
+            1.6661298,
+            1.299781,
+            2.4664094
+          ],
+          "target": [
+            -0.0212317,
+            0.7559884,
+            0
+          ],
+          "radius": 3.0374454,
+          "yaw": 0.6,
+          "pitch": 0.18,
+          "projectionMatrixFinite": true
+        },
+        "side": {
+          "aspect": 1.4143583,
+          "position": [
+            3.0124177,
+            0.9077974,
+            0
+          ],
+          "target": [
+            -0.0212317,
+            0.7559884,
+            0
+          ],
+          "radius": 3.0374454,
+          "yaw": 1.5707963,
+          "pitch": 0.05,
+          "projectionMatrixFinite": true
+        },
+        "drag": {
+          "aspect": 1.4143583,
+          "position": [
+            2.4722558,
+            1.5074644,
+            1.5632908
+          ],
+          "target": [
+            -0.0212317,
+            0.7559884,
+            0
+          ],
+          "radius": 3.0374454,
+          "yaw": 1.0107963,
+          "pitch": 0.25,
+          "projectionMatrixFinite": true
+        },
+        "wheel": {
+          "aspect": 1.4143583,
+          "position": [
+            5.5148246,
+            2.4244201,
+            3.4708279
+          ],
+          "target": [
+            -0.0212317,
+            0.7559884,
+            0
+          ],
+          "radius": 6.7437548,
+          "yaw": 1.0107963,
+          "pitch": 0.25,
+          "projectionMatrixFinite": true
+        }
+      },
+      "resize": [
+        {
+          "label": "desktop_default",
+          "render": {
+            "model": "ginger",
+            "animation": {
+              "playing": false,
+              "actionTime": 0.0833333,
+              "duration": 2.0833333
+            },
+            "camera": {
+              "aspect": 1.4143583,
+              "position": [
+                -0.0212317,
+                0.9381258,
+                3.0319796
+              ],
+              "target": [
+                -0.0212317,
+                0.7559884,
+                0
+              ],
+              "radius": 3.0374454,
+              "yaw": 0,
+              "pitch": 0.06,
+              "projectionMatrixFinite": true
+            },
+            "viewport": {
+              "cssWidth": 1000.7999878,
+              "cssHeight": 707.6000366,
+              "rendererWidth": 1000.7999877929688,
+              "rendererHeight": 707.6000366210938,
+              "drawingBufferWidth": 1250,
+              "drawingBufferHeight": 884,
+              "pixelRatio": 1.25,
+              "aspectMatches": true
+            },
+            "specifications": {
+              "appearance": "baked vertex-color/PBR approximation; blend authoritative",
+              "facialDrivers": "Blender only; GLB has evaluated initial expression"
+            }
+          },
+          "fullBodyAndAllLimbsVisible": true
+        },
+        {
+          "label": "desktop_breakpoint_requested_821x844",
+          "render": {
+            "model": "ginger",
+            "animation": {
+              "playing": false,
+              "actionTime": 0.0833333,
+              "duration": 2.0833333
+            },
+            "camera": {
+              "aspect": 0.4328912,
+              "position": [
+                -0.0212317,
+                1.1530661,
+                6.6100175
+              ],
+              "target": [
+                -0.0212317,
+                0.7559884,
+                0
+              ],
+              "radius": 6.6219334,
+              "yaw": 0,
+              "pitch": 0.06,
+              "projectionMatrixFinite": true
+            },
+            "viewport": {
+              "cssWidth": 326.3999939,
+              "cssHeight": 754,
+              "rendererWidth": 326.3999938964844,
+              "rendererHeight": 754,
+              "drawingBufferWidth": 407,
+              "drawingBufferHeight": 942,
+              "pixelRatio": 1.25,
+              "aspectMatches": true
+            },
+            "specifications": {
+              "appearance": "baked vertex-color/PBR approximation; blend authoritative",
+              "facialDrivers": "Blender only; GLB has evaluated initial expression"
+            }
+          },
+          "fullBodyAndAllLimbsVisible": true
+        },
+        {
+          "label": "mobile_390x844",
+          "render": {
+            "model": "ginger",
+            "animation": {
+              "playing": false,
+              "actionTime": 0.0833333,
+              "duration": 2.0833333
+            },
+            "camera": {
+              "aspect": 0.6839227,
+              "position": [
+                -0.0212317,
+                1.0160864,
+                4.3297625
+              ],
+              "target": [
+                -0.0212317,
+                0.7559884,
+                0
+              ],
+              "radius": 4.3375678,
+              "yaw": 0,
+              "pitch": 0.06,
+              "projectionMatrixFinite": true
+            },
+            "viewport": {
+              "cssWidth": 375.2000122,
+              "cssHeight": 548.6000366,
+              "rendererWidth": 375.20001220703125,
+              "rendererHeight": 548.6000366210938,
+              "drawingBufferWidth": 469,
+              "drawingBufferHeight": 685,
+              "pixelRatio": 1.25,
+              "aspectMatches": true
+            },
+            "specifications": {
+              "appearance": "baked vertex-color/PBR approximation; blend authoritative",
+              "facialDrivers": "Blender only; GLB has evaluated initial expression"
+            }
+          },
+          "fullBodyAndAllLimbsVisible": true
+        }
+      ],
+      "consoleErrors": [],
+      "visualReview": "Compared actual rendered rest/arms/legs with published GLB preview: painted face/body and separate limbs are present. Lighting and PBR sheen differ; no pixel-equivalence claimed.",
+      "standaloneFilePicker": {
+        "checks": {
+          "runtimeAllPass": true,
+          "publishedBytesAndSHA256Match": true,
+          "profileLabelAutomaticAndCorrect": true,
+          "observedConsoleErrorsNone": true,
+          "actualFileChooserUsed": true,
+          "visualRenderAndFullBodyConfirmed": true
+        },
+        "testedGLBSha256": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2",
+        "testedGLBBytes": 26312140
+      }
+    },
+    "garlic": {
+      "runtime": {
+        "model": {
+          "label": "にんにく",
+          "source": "v1.1.0/glb/Garlic_rigged.glb",
+          "testedGLBSha256": "f4fa6f099a6e4f631392613c7d87b917573d5def739aecbb178696ccadac030d",
+          "testedGLBBytes": 2806264,
+          "clipName": "Garlic_FK_motion_check",
+          "clipDurationSeconds": 2.0833333,
+          "clipTrackCount": 18
+        },
+        "frameMapping": "Original exported GLB timestamps preserve Blender frames: 1/7/13 at 12 fps -> 1/12, 7/12, 13/12 seconds",
+        "structure": {
+          "skinnedMeshCount": 4,
+          "meshCount": 19,
+          "uniqueBones": [
+            "root",
+            "body",
+            "armL",
+            "armR",
+            "legL",
+            "legR"
+          ],
+          "canonicalBones": [
+            "root",
+            "body",
+            "arm.L",
+            "arm.R",
+            "leg.L",
+            "leg.R"
+          ],
+          "skeletonJointCounts": [
+            {
+              "mesh": "Garlic_added_rounded_armL",
+              "joints": 6
+            },
+            {
+              "mesh": "Garlic_added_rounded_armR",
+              "joints": 6
+            },
+            {
+              "mesh": "Garlic_added_rounded_legL",
+              "joints": 6
+            },
+            {
+              "mesh": "Garlic_added_rounded_legR",
+              "joints": 6
+            }
+          ]
+        },
+        "textures": [],
+        "vertexColors": [
+          {
+            "mesh": "Garlic_added_rounded_armL",
+            "colorAttributePresent": true,
+            "colorVertices": 423,
+            "positionVertices": 423,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.94,
+              0.91,
+              0.83
+            ],
+            "channelMax": [
+              0.94,
+              0.91,
+              0.83
+            ]
+          },
+          {
+            "mesh": "Garlic_added_rounded_armR",
+            "colorAttributePresent": true,
+            "colorVertices": 423,
+            "positionVertices": 423,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.94,
+              0.91,
+              0.83
+            ],
+            "channelMax": [
+              0.94,
+              0.91,
+              0.83
+            ]
+          },
+          {
+            "mesh": "Garlic_added_rounded_legL",
+            "colorAttributePresent": true,
+            "colorVertices": 423,
+            "positionVertices": 423,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.94,
+              0.91,
+              0.83
+            ],
+            "channelMax": [
+              0.94,
+              0.91,
+              0.83
+            ]
+          },
+          {
+            "mesh": "Garlic_added_rounded_legR",
+            "colorAttributePresent": true,
+            "colorVertices": 423,
+            "positionVertices": 423,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.94,
+              0.91,
+              0.83
+            ],
+            "channelMax": [
+              0.94,
+              0.91,
+              0.83
+            ]
+          },
+          {
+            "mesh": "Garlic_original_happy_eye_0",
+            "colorAttributePresent": true,
+            "colorVertices": 98,
+            "positionVertices": 98,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ],
+            "channelMax": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ]
+          },
+          {
+            "mesh": "Garlic_original_happy_eye_1",
+            "colorAttributePresent": true,
+            "colorVertices": 98,
+            "positionVertices": 98,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ],
+            "channelMax": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ]
+          },
+          {
+            "mesh": "garlic_•_continuous_solid_sculpt_from_original_outline",
+            "colorAttributePresent": true,
+            "colorVertices": 36125,
+            "positionVertices": 36125,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.8932034,
+              0.8164068,
+              0.6464134
+            ],
+            "channelMax": [
+              0.94,
+              0.91,
+              0.83
+            ]
+          },
+          {
+            "mesh": "Garlic_•_flush_left_cheek",
+            "colorAttributePresent": true,
+            "colorVertices": 5761,
+            "positionVertices": 5761,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              1,
+              0.095,
+              0.135
+            ],
+            "channelMax": [
+              1,
+              0.095,
+              0.135
+            ]
+          },
+          {
+            "mesh": "Garlic_•_flush_right_cheek",
+            "colorAttributePresent": true,
+            "colorVertices": 5761,
+            "positionVertices": 5761,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              1,
+              0.095,
+              0.135
+            ],
+            "channelMax": [
+              1,
+              0.095,
+              0.135
+            ]
+          },
+          {
+            "mesh": "Garlic_•_coral_filled_U_smile",
+            "colorAttributePresent": true,
+            "colorVertices": 554,
+            "positionVertices": 554,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.75,
+              0.16,
+              0.19
+            ],
+            "channelMax": [
+              0.75,
+              0.16,
+              0.19
+            ]
+          },
+          {
+            "mesh": "Garlic_•_lower_pink_smile",
+            "colorAttributePresent": true,
+            "colorVertices": 1921,
+            "positionVertices": 1921,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.95,
+              0.34,
+              0.37
+            ],
+            "channelMax": [
+              0.95,
+              0.34,
+              0.37
+            ]
+          },
+          {
+            "mesh": "Garlic_•_source_U_mouth_border",
+            "colorAttributePresent": true,
+            "colorVertices": 242,
+            "positionVertices": 242,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ],
+            "channelMax": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ]
+          },
+          {
+            "mesh": "Garlic_original_neutral_omega_mouth",
+            "colorAttributePresent": true,
+            "colorVertices": 170,
+            "positionVertices": 170,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ],
+            "channelMax": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ]
+          },
+          {
+            "mesh": "Garlic_original-group_eye_0",
+            "colorAttributePresent": true,
+            "colorVertices": 3853,
+            "positionVertices": 3853,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1443726,
+              0.0476777,
+              0.0283532
+            ],
+            "channelMax": [
+              1.0000004,
+              0.9982149,
+              0.9881998
+            ]
+          },
+          {
+            "mesh": "Garlic_original-group_eye_1",
+            "colorAttributePresent": true,
+            "colorVertices": 3839,
+            "positionVertices": 3839,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1442366,
+              0.0475836,
+              0.0282779
+            ],
+            "channelMax": [
+              1.0000004,
+              0.9982061,
+              0.9875994
+            ]
+          },
+          {
+            "mesh": "Garlic_•_short_tapered_source_crease",
+            "colorAttributePresent": true,
+            "colorVertices": 22,
+            "positionVertices": 22,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.3,
+              0.14,
+              0.055
+            ],
+            "channelMax": [
+              0.3,
+              0.14,
+              0.055
+            ]
+          },
+          {
+            "mesh": "Garlic_•_soft_right_basal_wash",
+            "colorAttributePresent": true,
+            "colorVertices": 361,
+            "positionVertices": 361,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.73,
+              0.54,
+              0.31
+            ],
+            "channelMax": [
+              0.73,
+              0.54,
+              0.31
+            ]
+          },
+          {
+            "mesh": "Garlic_surprise_coral_center",
+            "colorAttributePresent": true,
+            "colorVertices": 1921,
+            "positionVertices": 1921,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.75,
+              0.16,
+              0.19
+            ],
+            "channelMax": [
+              0.75,
+              0.16,
+              0.19
+            ]
+          },
+          {
+            "mesh": "Garlic_•_surprised_brown_mouth_outline",
+            "colorAttributePresent": true,
+            "colorVertices": 770,
+            "positionVertices": 770,
+            "itemSize": 3,
+            "finite": true,
+            "allMaterialsUseVertexColors": true,
+            "channelMin": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ],
+            "channelMax": [
+              0.1620294,
+              0.0595112,
+              0.0382044
+            ]
+          }
+        ],
+        "expectedEmbeddedTextureCount": 0,
+        "loaderErrors": [],
+        "jointRotationDeltaRadiansFromRest": [
+          {
+            "root": 0,
+            "body": 0,
+            "arm.L": 0,
+            "arm.R": 0,
+            "leg.L": 0,
+            "leg.R": 0
+          },
+          {
+            "root": 0,
+            "body": 0,
+            "arm.L": 0.4363325,
+            "arm.R": 0.4363325,
+            "leg.L": 0,
+            "leg.R": 0
+          },
+          {
+            "root": 0,
+            "body": 0,
+            "arm.L": 0,
+            "arm.R": 0,
+            "leg.L": 0.2617992,
+            "leg.R": 0.2617992
+          }
+        ],
+        "checks": {
+          "loaded": true,
+          "expectedClipPresent": true,
+          "skinnedMeshesPresent": true,
+          "expectedSixBonesPresent": true,
+          "finiteDeformedVertices": true,
+          "armsPoseChangesVertices": true,
+          "legsPoseChangesVertices": true,
+          "bothArmJointRotationsChange": true,
+          "bothLegJointRotationsChange": true,
+          "allReferencedTextureImagesReady": true,
+          "loaderReportedNoMissingResources": true,
+          "expectedVertexPaintAndMaterialCount": true,
+          "bakedVertexColorsPresentFiniteAndUsed": true,
+          "noRasterMapsExpectedOrMissing": true,
+          "independentlyWeightedLeftAndRightArmsDeform": true,
+          "independentlyWeightedLeftAndRightLegsDeform": true
+        },
+        "samples": [
+          {
+            "label": "rest",
+            "blenderFrame": 1,
+            "timeSeconds": 0.08333333333333333,
+            "actualActionTime": 0.0833333,
+            "nonFiniteVertices": 0,
+            "maximumVertexDeltaFromRest": 0,
+            "limbDeformation": {
+              "arm.L": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "arm.R": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.L": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.R": {
+                "dominantWeightedVertices": 0,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              }
+            },
+            "worldBounds": {
+              "min": [
+                -1.2549997,
+                -0.3000001,
+                -0.4192325
+              ],
+              "max": [
+                1.2549997,
+                1.6698343,
+                0.4846683
+              ],
+              "size": [
+                2.5099994,
+                1.9698343,
+                0.9039007
+              ]
+            }
+          },
+          {
+            "label": "arms",
+            "blenderFrame": 7,
+            "timeSeconds": 0.5833333333333334,
+            "actualActionTime": 0.5833333,
+            "nonFiniteVertices": 0,
+            "maximumVertexDeltaFromRest": 0.2103477,
+            "limbDeformation": {
+              "arm.L": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 423,
+                "maximumVertexDeltaFromRest": 0.2103477
+              },
+              "arm.R": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 423,
+                "maximumVertexDeltaFromRest": 0.2103477
+              },
+              "leg.L": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              },
+              "leg.R": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 0
+              }
+            },
+            "worldBounds": {
+              "min": [
+                -1.2021595,
+                -0.3000001,
+                -0.4192325
+              ],
+              "max": [
+                1.2021595,
+                1.6698343,
+                0.4846683
+              ],
+              "size": [
+                2.4043189,
+                1.9698343,
+                0.9039007
+              ]
+            }
+          },
+          {
+            "label": "legs",
+            "blenderFrame": 13,
+            "timeSeconds": 1.0833333333333333,
+            "actualActionTime": 1.0833333,
+            "nonFiniteVertices": 0,
+            "maximumVertexDeltaFromRest": 0.095427,
+            "limbDeformation": {
+              "arm.L": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 1e-07
+              },
+              "arm.R": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 0,
+                "maximumVertexDeltaFromRest": 1e-07
+              },
+              "leg.L": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 423,
+                "maximumVertexDeltaFromRest": 0.095427
+              },
+              "leg.R": {
+                "dominantWeightedVertices": 423,
+                "movedVertices": 423,
+                "maximumVertexDeltaFromRest": 0.095427
+              }
+            },
+            "worldBounds": {
+              "min": [
+                -1.2549997,
+                -0.2951125,
+                -0.4192325
+              ],
+              "max": [
+                1.2549997,
+                1.6698343,
+                0.4846683
+              ],
+              "size": [
+                2.5099994,
+                1.9649467,
+                0.9039007
+              ]
+            }
+          }
+        ]
+      },
+      "browserChecks": {
+        "allSixteenRuntimeChecksPass": true,
+        "publishedGLBBytesAndSHA256Match": true,
+        "playAdvances": true,
+        "stopStable": true,
+        "cameraFrontObliqueSide": true,
+        "cameraDrag": true,
+        "cameraWheel": true,
+        "allMeasuredCameraProjectionsFinite": true,
+        "desktopBreakpointMobileResizeFits": true,
+        "allSettledRendererDimensionsAndAspectMatch": true,
+        "observedConsoleErrorsNone": true,
+        "visualPaintFaceShapeAndThreePosesConfirmed": true
+      },
+      "playback": {
+        "playA": {
+          "playing": true,
+          "actionTime": 1.1333333,
+          "duration": 2.0833333
+        },
+        "playB": {
+          "playing": true,
+          "actionTime": 1.8167333,
+          "duration": 2.0833333
+        },
+        "stopA": {
+          "playing": false,
+          "actionTime": 1.8667333,
+          "duration": 2.0833333
+        },
+        "stopB": {
+          "playing": false,
+          "actionTime": 1.8667333,
+          "duration": 2.0833333
+        }
+      },
+      "camera": {
+        "front": {
+          "aspect": 1.4143583,
+          "position": [
+            0,
+            0.9295401,
+            4.9211004
+          ],
+          "target": [
+            0,
+            0.6849171,
+            0.0327179
+          ],
+          "radius": 4.8944994,
+          "yaw": 0,
+          "pitch": 0.05,
+          "projectionMatrixFinite": true
+        },
+        "oblique": {
+          "aspect": 1.4143583,
+          "position": [
+            2.718992,
+            1.5611773,
+            4.0070574
+          ],
+          "target": [
+            0,
+            0.6849171,
+            0.0327179
+          ],
+          "radius": 4.8944994,
+          "yaw": 0.6,
+          "pitch": 0.18,
+          "projectionMatrixFinite": true
+        },
+        "side": {
+          "aspect": 1.4143583,
+          "position": [
+            4.8883825,
+            0.9295401,
+            0.0327179
+          ],
+          "target": [
+            0,
+            0.6849171,
+            0.0327179
+          ],
+          "radius": 4.8944994,
+          "yaw": 1.5707963,
+          "pitch": 0.05,
+          "projectionMatrixFinite": true
+        },
+        "drag": {
+          "aspect": 1.4143583,
+          "position": [
+            4.0179729,
+            1.8958356,
+            2.5517841
+          ],
+          "target": [
+            0,
+            0.6849171,
+            0.0327179
+          ],
+          "radius": 4.8944994,
+          "yaw": 1.0107963,
+          "pitch": 0.25,
+          "projectionMatrixFinite": true
+        },
+        "wheel": {
+          "aspect": 1.4143583,
+          "position": [
+            8.920728,
+            3.3734059,
+            5.6255642
+          ],
+          "target": [
+            0,
+            0.6849171,
+            0.0327179
+          ],
+          "radius": 10.8667976,
+          "yaw": 1.0107963,
+          "pitch": 0.25,
+          "projectionMatrixFinite": true
+        }
+      },
+      "resize": [
+        {
+          "label": "desktop_default",
+          "render": {
+            "model": "garlic",
+            "animation": {
+              "playing": false,
+              "actionTime": 0.0833333,
+              "duration": 2.0833333
+            },
+            "camera": {
+              "aspect": 1.4143583,
+              "position": [
+                0,
+                0.9784109,
+                4.9184098
+              ],
+              "target": [
+                0,
+                0.6849171,
+                0.0327179
+              ],
+              "radius": 4.8944994,
+              "yaw": 0,
+              "pitch": 0.06,
+              "projectionMatrixFinite": true
+            },
+            "viewport": {
+              "cssWidth": 1000.7999878,
+              "cssHeight": 707.6000366,
+              "rendererWidth": 1000.7999877929688,
+              "rendererHeight": 707.6000366210938,
+              "drawingBufferWidth": 1250,
+              "drawingBufferHeight": 884,
+              "pixelRatio": 1.25,
+              "aspectMatches": true
+            },
+            "specifications": {
+              "appearance": "baked vertex-color/PBR approximation; blend authoritative",
+              "facialDrivers": "Blender only; GLB has evaluated initial expression"
+            }
+          },
+          "fullBodyAndAllLimbsVisible": true
+        },
+        {
+          "label": "desktop_breakpoint_requested_821x844",
+          "render": {
+            "model": "garlic",
+            "animation": {
+              "playing": false,
+              "actionTime": 0.0833333,
+              "duration": 2.0833333
+            },
+            "camera": {
+              "aspect": 0.4328912,
+              "position": [
+                0,
+                1.3700506,
+                11.4379036
+              ],
+              "target": [
+                0,
+                0.6849171,
+                0.0327179
+              ],
+              "radius": 11.4257459,
+              "yaw": 0,
+              "pitch": 0.06,
+              "projectionMatrixFinite": true
+            },
+            "viewport": {
+              "cssWidth": 326.3999939,
+              "cssHeight": 754,
+              "rendererWidth": 326.3999938964844,
+              "rendererHeight": 754,
+              "drawingBufferWidth": 407,
+              "drawingBufferHeight": 942,
+              "pixelRatio": 1.25,
+              "aspectMatches": true
+            },
+            "specifications": {
+              "appearance": "baked vertex-color/PBR approximation; blend authoritative",
+              "facialDrivers": "Blender only; GLB has evaluated initial expression"
+            }
+          },
+          "fullBodyAndAllLimbsVisible": true
+        },
+        {
+          "label": "mobile_390x844",
+          "render": {
+            "model": "garlic",
+            "animation": {
+              "playing": false,
+              "actionTime": 0.0833333,
+              "duration": 2.0833333
+            },
+            "camera": {
+              "aspect": 0.6839227,
+              "position": [
+                0,
+                1.1300141,
+                7.4420963
+              ],
+              "target": [
+                0,
+                0.6849171,
+                0.0327179
+              ],
+              "radius": 7.4227353,
+              "yaw": 0,
+              "pitch": 0.06,
+              "projectionMatrixFinite": true
+            },
+            "viewport": {
+              "cssWidth": 375.2000122,
+              "cssHeight": 548.6000366,
+              "rendererWidth": 375.20001220703125,
+              "rendererHeight": 548.6000366210938,
+              "drawingBufferWidth": 469,
+              "drawingBufferHeight": 685,
+              "pixelRatio": 1.25,
+              "aspectMatches": true
+            },
+            "specifications": {
+              "appearance": "baked vertex-color/PBR approximation; blend authoritative",
+              "facialDrivers": "Blender only; GLB has evaluated initial expression"
+            }
+          },
+          "fullBodyAndAllLimbsVisible": true
+        }
+      ],
+      "consoleErrors": [],
+      "visualReview": "Compared actual rendered rest/arms/legs with published GLB preview: painted face/body and separate limbs are present. Lighting and PBR sheen differ; no pixel-equivalence claimed.",
+      "standaloneFilePicker": {
+        "checks": {
+          "runtimeAllPass": true,
+          "publishedBytesAndSHA256Match": true,
+          "profileLabelAutomaticAndCorrect": true,
+          "observedConsoleErrorsNone": true,
+          "actualFileChooserUsed": true,
+          "visualRenderAndFullBodyConfirmed": true
+        },
+        "testedGLBSha256": "f4fa6f099a6e4f631392613c7d87b917573d5def739aecbb178696ccadac030d",
+        "testedGLBBytes": 2806264
+      }
+    }
+  },
+  "standaloneViewer": {
+    "localFileSelectionTestedForBothModels": true,
+    "expectedProfileIdentifiedFromFileSHA256": true,
+    "initialNoModelState": "choose_local_GLB",
+    "PythonHTTPServerSmokeChecks": {
+      "initialChooseLocalGLB": true,
+      "actualFileChooserUsed": true,
+      "allSixteenRuntimeChecksPass": true,
+      "publishedGarlicBytesAndSHA256Match": true,
+      "automaticGarlicProfileCorrect": true,
+      "observedConsoleErrorsNone": true,
+      "PythonMimeAndBasePathLoadSmokePass": true
+    },
+    "mainSHA256": "0080c36311146e6375daf2526c3b101e28187aeaf660e80db4f7271ff0895814"
+  },
+  "unresolvedFailures": []
+}

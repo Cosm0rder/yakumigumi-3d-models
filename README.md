@@ -43,7 +43,23 @@
 
 しょうがは既存の手足・本体・顔・塗装を保持しています。にんにくも既存の本体・顔・塗装を保持し、新しい丸い手足だけを `ADDED LIMBS - toggle viewport and render` Collectionへ追加しています。Outlinerで画面表示とレンダー表示をオフにすると、元の手足なし外観になります。細かな操作はv1.1.0の `docs/RIG_USAGE.md` を参照してください。
 
-元の外観・材質・表情編集の基準は `.blend` です。しょうがの既存shape keys、にんにくの顔コントローラーと6本のscaleドライバーをBlender内に保持しています。にんにくの表情ドライバーはGLBへ移植せず、GLBは初期表情の評価済みメッシュです。GLBにはスキンと2秒の手足アニメを格納し、元の色をベイクした頂点色とPBR材質で近似しています。procedural bump・可変roughness・subsurface・照明や色管理による見た目まで同一にはなりません。この2体はBlenderで保存後の再読込とGLB再読込を検証しています。Three.jsの実行検証は追加9体を対象にしています。
+元の外観・材質・表情編集の基準は `.blend` です。しょうがの既存shape keys、にんにくの顔コントローラーと6本のscaleドライバーをBlender内に保持しています。にんにくの表情ドライバーはGLBへ移植せず、GLBは初期表情の評価済みメッシュです。GLBにはスキンと2秒の手足アニメを格納し、元の色をベイクした頂点色とPBR材質で近似しています。procedural bump・可変roughness・subsurface・照明や色管理による見た目まで同一にはなりません。この2体はBlenderで保存後の再読込とGLB再読込を検証しています。公開後には、配布済みGLBをThree.js r180でも検証しました。
+
+## しょうがちゃん・にんにくをThree.jsで使う
+
+v1.1.0の公開後に、元のReleaseを変更せず、別途 [viewer/](viewer/) と [original_pair_threejs_validation.json](original_pair_threejs_validation.json) を追加しました。公開GLBのSHA256と読込バイト列を照合し、両モデルの16項目の動作検証、再生・停止、カメラ操作と画面幅変更を確認しています。
+
+1. このリポジトリの **Code → Download ZIP** からソースをダウンロードして展開します。モデルは上記v1.1.0のRelease ZIPを別に展開してください。
+2. ターミナルで展開したソースのルートへ移動し、次を実行します。
+
+   ```sh
+   cd viewer
+   python -m http.server 8000 --bind 127.0.0.1
+   ```
+
+3. `http://127.0.0.1:8000/` を開き、ローカルGLBの選択欄からv1.1.0の `glb/Ginger_rigged.glb` または `glb/Garlic_rigged.glb` を選びます。休止・腕・脚の表示とPlay/Stopで手足を確認できます。
+
+この2体のGLBは `COLOR_0` 頂点色を使い、ラスター画像マップは0です。塗装が未読込という意味ではありません。元のPNGは `.blend` 内にパックして保持しています。v1.1.0のZIP内の説明は公開時点のBlender検証を記録したものです。追加9体のv1.0.0とその検証結果は変更していません。
 
 ## 追加9体をBlenderで使う
 

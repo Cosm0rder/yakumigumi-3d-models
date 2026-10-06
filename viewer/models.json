@@ -1,0 +1,20 @@
+{
+  "models": [
+    {
+      "key": "ginger",
+      "label": "しょうがちゃん",
+      "publicPath": "v1.1.0/glb/Ginger_rigged.glb",
+      "clip": "Ginger_FK_motion_check",
+      "expectedMeshCount": 6,
+      "expectedGLBSha256": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2"
+    },
+    {
+      "key": "garlic",
+      "label": "にんにく",
+      "publicPath": "v1.1.0/glb/Garlic_rigged.glb",
+      "clip": "Garlic_FK_motion_check",
+      "expectedMeshCount": 19,
+      "expectedGLBSha256": "f4fa6f099a6e4f631392613c7d87b917573d5def739aecbb178696ccadac030d"
+    }
+  ]
+}

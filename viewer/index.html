@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,"><title>やくみ組 GLB・手足の動作確認</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f2e9;color:#352a24;font:15px system-ui,sans-serif}
+header{padding:18px 24px;background:#fffaf0;border-bottom:1px solid #d6c8b7}h1{font-size:21px;margin:0 0 5px}p{margin:6px 0}
+main{display:grid;grid-template-columns:minmax(320px,1fr) minmax(320px,480px);height:calc(100vh - 90px)}
+.stage{position:relative;min-height:450px}canvas{display:block;width:100%;height:100%}
+.controls{padding:16px;overflow:auto;background:#fffdf8;border-left:1px solid #d6c8b7}
+label{display:block;margin:10px 0 4px}select,input,button{font:inherit}select,input[type=file]{width:100%;padding:8px}
+button{padding:8px 12px;border:1px solid #b2a08b;background:#fff8e7;border-radius:6px;cursor:pointer;margin:4px 4px 4px 0}button:hover{background:#f4dfbb}button:disabled{opacity:.45;cursor:default}
+#status{position:absolute;left:14px;top:14px;max-width:85%;background:#fffdf3ed;padding:8px 12px;border-radius:7px;white-space:pre-wrap}
+#runtime-report{font:11px ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#f0ebe2;padding:12px;border-radius:6px}
+.note{font-size:12px;color:#6c5a4d}summary{cursor:pointer}a{color:#725031}
+@media(max-width:800px){main{display:block;height:auto}.stage{height:65vh}.controls{border-left:0}}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+<header><h1>やくみ組 GLB・手足の動作確認</h1><p>1体ずつ読み込み、腕・脚の動きと色・輪郭を確認します。</p></header>
+<main>
+<section class="stage" aria-label="モデル表示"><canvas id="viewport"></canvas><div id="status" role="status">準備中</div></section>
+<aside class="controls">
+<label for="model-select">配布モデル情報</label><select id="model-select"><option>一覧を読み込み中</option></select><button id="reload" hidden>選択モデルを読み込む</button>
+<label for="local-file">展開したモデルのGLBを選択</label><input id="local-file" type="file" accept=".glb"><p class="note">選んだファイルはこの画面内で読みます。</p>
+<div><button id="rest" disabled>休止：frame 1</button><button id="arms" disabled>腕：frame 7</button><button id="legs" disabled>脚：frame 13</button></div>
+<div><button id="play" disabled>動作を再生</button><button id="stop" disabled>停止</button><button id="sample-all" disabled>3ポーズを検証</button></div>
+<div><button id="front">正面</button><button id="oblique">斜め</button><button id="side">側面</button></div>
+<p class="note">表示上でドラッグして回転できます。スクロールで距離を調整します。</p>
+<div><button id="save-report" disabled>検証JSONを保存</button><button id="save-image" disabled>表示PNGを保存</button></div>
+<p class="note">GLBの塗装はベイクした頂点色とPBR材質です。にんにくの表情ドライバーはBlender限定です。</p><p class="note">検証結果。色や輪郭の一致は表示画像を原画と見比べて確認してください。</p><details><summary>描画状態と再生時刻</summary><pre id="render-state" aria-live="polite">{"status":"waiting"}</pre></details><pre id="check-summary" aria-live="polite">{"status":"waiting_for_model"}</pre>
+<details><summary>詳細：ジョイント・実変形頂点</summary><pre id="runtime-report">{"status":"waiting_for_model"}</pre></details>
+<p class="note">Three.js r180 / <a href="./vendor/THREE_LICENSE.txt">MIT license</a>。このviewerの独自コードはCC0。</p>
+</aside>
+</main>
+<script type="module" src="./main.mjs"></script>
+</body></html>

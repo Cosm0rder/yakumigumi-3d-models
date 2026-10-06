@@ -1,0 +1,9 @@
+CC0 1.0 Universal
+
+The original code in this viewer (index.html, main.mjs, models.json and README.txt) is dedicated to the public domain under CC0 1.0.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Commercial use, modification, redistribution and sublicensing are permitted without attribution requirements, to the extent allowed by law.
+Third-party files in vendor/ remain under the MIT license in vendor/THREE_LICENSE.txt. CC0 does not replace those terms.
+Model files are licensed separately by their corresponding distribution package.
+
