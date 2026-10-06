@@ -1,0 +1,603 @@
+{
+  "purpose": "Read-only original approved pair publication verification",
+  "models_modified": false,
+  "render_or_export_performed": false,
+  "characters": [
+    {
+      "character": "Ginger",
+      "blend": {
+        "file": "Ginger_rigged.blend",
+        "factory_reopen_successful": true,
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "fps": 12,
+        "clip_frame_range": [
+          1,
+          25
+        ],
+        "inventory": {
+          "actions": [
+            "Ginger_FK_motion_check"
+          ],
+          "nla_tracks": [],
+          "drivers": []
+        },
+        "privacy": {
+          "libraries": 0,
+          "texts": 0,
+          "sounds": 0,
+          "movieclips": 0,
+          "cache_files": 0,
+          "sequence_strips": 0,
+          "third_party_asset_name_matches": []
+        },
+        "images": [
+          {
+            "name": "Ginger_pigment_v13.png",
+            "path": "//../textures/Ginger_pigment_v13.png",
+            "packed_paths": [
+              "//../textures/Ginger_pigment_v13.png"
+            ],
+            "packed": true,
+            "package_texture_bytes_identical": true,
+            "sha256": "d0fb0e986f6dee85470d95cf1215ac1c888c010e3bfee034ce25679ebb864ff7"
+          },
+          {
+            "name": "Ginger_pigment_v20.png",
+            "path": "//../textures/Ginger_pigment_v20.png",
+            "packed_paths": [
+              "//../textures/Ginger_pigment_v20.png"
+            ],
+            "packed": true,
+            "package_texture_bytes_identical": true,
+            "sha256": "9c491a3aa377a705806c2ed3a29cd84bf7f4b51aaeacf7eb0be4b330fdaf7449"
+          }
+        ],
+        "weights": [
+          {
+            "mesh": "Cocoa oval eye.L",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Cocoa oval eye.R",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Eye highlight.L",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Eye highlight.R",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Ginger continuous seamless body limbs crown",
+            "vertices": 159468,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 0.9999990463256836,
+            "weight_sum_max": 1.0000000298023224
+          },
+          {
+            "mesh": "Short cocoa mouth",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          }
+        ],
+        "independent_limbs": [
+          {
+            "bone": "arm.L",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 14801,
+                "max_displacement": 0.10996350966028846
+              }
+            }
+          },
+          {
+            "bone": "arm.R",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 11818,
+                "max_displacement": 0.09661209720313266
+              }
+            }
+          },
+          {
+            "bone": "leg.L",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 15178,
+                "max_displacement": 0.06660960401799425
+              }
+            }
+          },
+          {
+            "bone": "leg.R",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 13425,
+                "max_displacement": 0.05649507660535606
+              }
+            }
+          }
+        ]
+      },
+      "glb": {
+        "file": "Ginger_rigged.glb",
+        "fresh_factory_import_successful": true,
+        "structure": {
+          "version": 2,
+          "skin_joint_counts": [
+            6
+          ],
+          "clips": [
+            "Ginger_FK_motion_check"
+          ],
+          "external_resources": 0
+        },
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "inventory": {
+          "actions": [
+            "Ginger_FK_motion_check_Ginger_Rig"
+          ],
+          "nla_tracks": [
+            {
+              "id": "Ginger_Rig",
+              "track": "Ginger_FK_motion_check",
+              "strips": [
+                {
+                  "name": "Ginger_FK_motion_check_Ginger_Rig",
+                  "action": "Ginger_FK_motion_check_Ginger_Rig"
+                }
+              ]
+            }
+          ],
+          "drivers": []
+        },
+        "privacy": {
+          "libraries": 0,
+          "texts": 0,
+          "sounds": 0,
+          "movieclips": 0,
+          "cache_files": 0,
+          "sequence_strips": 0,
+          "third_party_asset_name_matches": []
+        },
+        "weights": [
+          {
+            "mesh": "Cocoa oval eye.L",
+            "vertices": 2048,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Cocoa oval eye.R",
+            "vertices": 2047,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Eye highlight.L",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Eye highlight.R",
+            "vertices": 576,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Ginger continuous seamless body limbs crown",
+            "vertices": 390341,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 0.9999999701976776,
+            "weight_sum_max": 1.0000000298023224
+          },
+          {
+            "mesh": "Short cocoa mouth",
+            "vertices": 2046,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          }
+        ],
+        "independent_limbs": [
+          {
+            "bone": "arm.L",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 32607,
+                "max_displacement": 0.10996356778226445
+              }
+            }
+          },
+          {
+            "bone": "arm.R",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 28092,
+                "max_displacement": 0.09661214460555766
+              }
+            }
+          },
+          {
+            "bone": "leg.L",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 20055,
+                "max_displacement": 0.06660969295406291
+              }
+            }
+          },
+          {
+            "bone": "leg.R",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Ginger continuous seamless body limbs crown": {
+                "moved_vertices": 17815,
+                "max_displacement": 0.05649509174557248
+              }
+            }
+          }
+        ]
+      },
+      "model_glb_hashes": {
+        "blend": "0a4866412ad53324b51afa8a66a1a447eed175cbbe717dbf8fbffc6957741398",
+        "glb": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2"
+      },
+      "read_only_hashes_unchanged": true
+    },
+    {
+      "character": "Garlic",
+      "blend": {
+        "file": "Garlic_rigged.blend",
+        "factory_reopen_successful": true,
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "fps": 12,
+        "clip_frame_range": [
+          1,
+          25
+        ],
+        "inventory": {
+          "actions": [
+            "Garlic_FK_motion_check"
+          ],
+          "nla_tracks": [],
+          "drivers": [
+            {
+              "id": "Garlic • neutral original mouth expression",
+              "path": "scale",
+              "index": 0,
+              "type": "SCRIPTED",
+              "expression": "1.0 if opening < 0.20 and surprise < 0.5 else 0.0001",
+              "valid": true
+            },
+            {
+              "id": "Garlic • neutral original mouth expression",
+              "path": "scale",
+              "index": 1,
+              "type": "SCRIPTED",
+              "expression": "1.0 if opening < 0.20 and surprise < 0.5 else 0.0001",
+              "valid": true
+            },
+            {
+              "id": "Garlic • neutral original mouth expression",
+              "path": "scale",
+              "index": 2,
+              "type": "SCRIPTED",
+              "expression": "1.0 if opening < 0.20 and surprise < 0.5 else 0.0001",
+              "valid": true
+            },
+            {
+              "id": "Garlic • open mouth visibility",
+              "path": "scale",
+              "index": 0,
+              "type": "SCRIPTED",
+              "expression": "1.0 if opening >= 0.20 else 0.0001",
+              "valid": true
+            },
+            {
+              "id": "Garlic • open mouth visibility",
+              "path": "scale",
+              "index": 1,
+              "type": "SCRIPTED",
+              "expression": "1.0 if opening >= 0.20 else 0.0001",
+              "valid": true
+            },
+            {
+              "id": "Garlic • open mouth visibility",
+              "path": "scale",
+              "index": 2,
+              "type": "SCRIPTED",
+              "expression": "1.0 if opening >= 0.20 else 0.0001",
+              "valid": true
+            }
+          ]
+        },
+        "privacy": {
+          "libraries": 0,
+          "texts": 0,
+          "sounds": 0,
+          "movieclips": 0,
+          "cache_files": 0,
+          "sequence_strips": 0,
+          "third_party_asset_name_matches": []
+        },
+        "images": [
+          {
+            "name": "Garlic_eye_paint.png",
+            "path": "//../textures/Garlic_eye_paint.png",
+            "packed_paths": [
+              "//../textures/Garlic_eye_paint.png"
+            ],
+            "packed": true,
+            "package_texture_bytes_identical": true,
+            "sha256": "1a019f60363041ee729baf88e5c0afd939ffa5b22f5684865a9509b0c5c178d6"
+          }
+        ],
+        "weights": [
+          {
+            "mesh": "Garlic added rounded arm.L",
+            "vertices": 362,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Garlic added rounded arm.R",
+            "vertices": 362,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Garlic added rounded leg.L",
+            "vertices": 362,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Garlic added rounded leg.R",
+            "vertices": 362,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          }
+        ],
+        "independent_limbs": [
+          {
+            "bone": "arm.L",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Garlic added rounded arm.L": {
+                "moved_vertices": 362,
+                "max_displacement": 0.16876065144017632
+              }
+            }
+          },
+          {
+            "bone": "arm.R",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Garlic added rounded arm.R": {
+                "moved_vertices": 362,
+                "max_displacement": 0.1687606211587744
+              }
+            }
+          },
+          {
+            "bone": "leg.L",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Garlic added rounded leg.L": {
+                "moved_vertices": 362,
+                "max_displacement": 0.09542687806123486
+              }
+            }
+          },
+          {
+            "bone": "leg.R",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Garlic added rounded leg.R": {
+                "moved_vertices": 362,
+                "max_displacement": 0.09542698477742843
+              }
+            }
+          }
+        ]
+      },
+      "glb": {
+        "file": "Garlic_rigged.glb",
+        "fresh_factory_import_successful": true,
+        "structure": {
+          "version": 2,
+          "skin_joint_counts": [
+            6
+          ],
+          "clips": [
+            "Garlic_FK_motion_check"
+          ],
+          "external_resources": 0
+        },
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "inventory": {
+          "actions": [
+            "Garlic_FK_motion_check_Garlic_Rig"
+          ],
+          "nla_tracks": [
+            {
+              "id": "Garlic_Rig",
+              "track": "Garlic_FK_motion_check",
+              "strips": [
+                {
+                  "name": "Garlic_FK_motion_check_Garlic_Rig",
+                  "action": "Garlic_FK_motion_check_Garlic_Rig"
+                }
+              ]
+            }
+          ],
+          "drivers": []
+        },
+        "privacy": {
+          "libraries": 0,
+          "texts": 0,
+          "sounds": 0,
+          "movieclips": 0,
+          "cache_files": 0,
+          "sequence_strips": 0,
+          "third_party_asset_name_matches": []
+        },
+        "weights": [
+          {
+            "mesh": "Garlic added rounded arm.L",
+            "vertices": 423,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Garlic added rounded arm.R",
+            "vertices": 423,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Garlic added rounded leg.L",
+            "vertices": 423,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          },
+          {
+            "mesh": "Garlic added rounded leg.R",
+            "vertices": 423,
+            "unweighted_vertices": 0,
+            "weight_sum_min": 1.0,
+            "weight_sum_max": 1.0
+          }
+        ],
+        "independent_limbs": [
+          {
+            "bone": "arm.L",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Garlic added rounded arm.L": {
+                "moved_vertices": 423,
+                "max_displacement": 0.16876060562709755
+              }
+            }
+          },
+          {
+            "bone": "arm.R",
+            "world_axis": "Y",
+            "degrees": 20,
+            "moved_meshes": {
+              "Garlic added rounded arm.R": {
+                "moved_vertices": 423,
+                "max_displacement": 0.16876070701581708
+              }
+            }
+          },
+          {
+            "bone": "leg.L",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Garlic added rounded leg.L": {
+                "moved_vertices": 423,
+                "max_displacement": 0.09542710523584819
+              }
+            }
+          },
+          {
+            "bone": "leg.R",
+            "world_axis": "Y",
+            "degrees": 15,
+            "moved_meshes": {
+              "Garlic added rounded leg.R": {
+                "moved_vertices": 423,
+                "max_displacement": 0.09542715197145263
+              }
+            }
+          }
+        ]
+      },
+      "model_glb_hashes": {
+        "blend": "7cb8a1a6d0201aadfd9b4da42a271f8809a9c53ec0fb2c541c38286536de1841",
+        "glb": "f4fa6f099a6e4f631392613c7d87b917573d5def739aecbb178696ccadac030d"
+      },
+      "read_only_hashes_unchanged": true
+    }
+  ],
+  "elapsed_seconds": 8.34
+}
