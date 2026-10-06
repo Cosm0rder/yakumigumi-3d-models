@@ -1,0 +1,267 @@
+{
+  "character_count": 9,
+  "all_runtime_checks_passed": true,
+  "characters": [
+    {
+      "character": "Negi",
+      "glb_sha256": "e69e33a0662a1da2e31f77fde4d42c7a51dc00e027f040405b194232b069fe72",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048055,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Wasabi",
+      "glb_sha256": "b827490048b90b2f733d32af37917cb8ff0cc20963fda928a48d323ffe059750",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048055,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Mustard",
+      "glb_sha256": "7b4bcb5f5882b97c5bbb48a4b9aa23fc3c1d67b6c326b5d6927bc131ce2aadb2",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048054,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Yuzu",
+      "glb_sha256": "346082c07069891f9917ce0c1110bf896727374fd5eb8494ae9ad2c01c3ae838",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048055,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Chili",
+      "glb_sha256": "0f59b758392f32387c93581f3c7c522e404d095cf32cf713c4c27645ec6c5822",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048054,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Myoga",
+      "glb_sha256": "c059f2fdcbf5a06dd3ae0b400576b415fb35f2904e5af0f63de61bc2e6dde9aa",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048055,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Okra",
+      "glb_sha256": "c64840a837fd8e7c9e581e9a0a4db4cf99a1eec880ffeadb2f47702896efc525",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048054,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Daikon",
+      "glb_sha256": "80158de57e1d1c4a790482e2c2c88f38b1d27072fc524c2af1f2f4bce3446f16",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048054,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    },
+    {
+      "character": "Sansho",
+      "glb_sha256": "52d53d303544e07d6c4232b0ea1084ad62a784f8feeaefd9752b2b84ecd7fd5d",
+      "checks": {
+        "allReferencedTextureImagesReady": true,
+        "armsPoseChangesVertices": true,
+        "bothArmJointRotationsChange": true,
+        "bothLegJointRotationsChange": true,
+        "expectedClipPresent": true,
+        "expectedSixBonesPresent": true,
+        "finiteDeformedVertices": true,
+        "legsPoseChangesVertices": true,
+        "loaded": true,
+        "loaderReportedNoMissingResources": true,
+        "skinnedMeshesPresent": true
+      },
+      "engine": {
+        "name": "Three.js",
+        "revision": "180"
+      },
+      "arms_vertex_delta": 0.1048055,
+      "legs_vertex_delta": 0.0568262,
+      "visual_review": {
+        "blender_rest_preview_compared_with_original_reference": true,
+        "threejs_actual_display_visually_checked": true,
+        "missing_textures_seen": false
+      }
+    }
+  ],
+  "mp4_seconds_each": 2,
+  "mp4_frames_each": 24,
+  "mp4_fps": 12,
+  "glb_clip_seconds": 2.0833333,
+  "glb_pose_times_tested": [
+    0,
+    0.5,
+    1
+  ]
+}
