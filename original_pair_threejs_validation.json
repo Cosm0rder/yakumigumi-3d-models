@@ -3,7 +3,9 @@
   "timestampUTC": "2026-10-06T22:23:52.614Z",
   "engine": "Three.js r180",
   "all_runtime_checks_passed": true,
-  "viewerMainSHA256": "0080c36311146e6375daf2526c3b101e28187aeaf660e80db4f7271ff0895814",
+  "viewerMainSHA256": "e78d9e146810960528c04f1c74cf433ba5d8ed32c078c86f0f903d8f8611396f",
+  "standaloneWorkflowTestMainSHA256BeforeGitLFNormalization": "0080c36311146e6375daf2526c3b101e28187aeaf660e80db4f7271ff0895814",
+  "lineEndingNote": "Standalone workflow tests used CRLF source. Public Git source uses LF; source contents match exactly after newline normalization. A final Python file-picker smoke tested the public LF bytes.",
   "cameraHarnessMainSHA256": "2e24d0be0153f39066537e9287e9c6b8d7b5267634a21d910bb13b588dfa317d",
   "modelReleaseURL": "https://github.com/Cosm0rder/yakumigumi-3d-models/releases/tag/v1.1.0",
   "modelZIP_SHA256": "593d6663850e75c0cf3370fb8f9b13d05943d9c640d37a9981585f45dcf77dcd",
@@ -1560,7 +1562,17 @@
       "observedConsoleErrorsNone": true,
       "PythonMimeAndBasePathLoadSmokePass": true
     },
-    "mainSHA256": "0080c36311146e6375daf2526c3b101e28187aeaf660e80db4f7271ff0895814"
+    "finalPublicLFSourceSmokeChecks": {
+      "initialChooseLocalGLB": true,
+      "actualFileChooserUsed": true,
+      "allSixteenRuntimeChecksPass": true,
+      "publishedGarlicSHAAndSizeMatch": true,
+      "garlicProfileIdentified": true,
+      "observedConsoleErrorsNone": true,
+      "publicSourceLFBytesMatch": true
+    },
+    "finalPublicLFSourceSHA256": "e78d9e146810960528c04f1c74cf433ba5d8ed32c078c86f0f903d8f8611396f",
+    "mainSHA256": "e78d9e146810960528c04f1c74cf433ba5d8ed32c078c86f0f903d8f8611396f"
   },
   "unresolvedFailures": []
 }
