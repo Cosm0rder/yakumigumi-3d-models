@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { checksForProfile } from './profile-checks.mjs';
 
 const $ = id => document.getElementById(id);
 const canvas = $('viewport');
@@ -18,7 +19,7 @@ const fillLight = new THREE.DirectionalLight(0xe8efff, .8);
 fillLight.position.set(-3, 2, -2);
 scene.add(fillLight);
 const clock = new THREE.Clock();
-const state = { root: null, mixer: null, action: null, clip: null, playing: false, loading: false, model: null, report: null, loadErrors: [], skinned: [], meshes: [], bones: [], baseline: new Map(), samples: [], generation: 0 };
+const state = { root: null, mixer: null, action: null, clip: null, playing: false, loading: false, model: null, report: null, loadErrors: [], skinned: [], meshes: [], bones: [], nodeNames: [], baseline: new Map(), samples: [], generation: 0 };
 const orbit = { target: new THREE.Vector3(), radius: 4, fitRadius:0, yaw: .15, pitch: .12 };
 let fitSize = null;
 function radiusToFitViewport(size) {
@@ -27,16 +28,20 @@ function radiusToFitViewport(size) {
   const distance = Math.max(horizontalExtent/(2*tangent*Math.max(camera.aspect,.01)),size.y/(2*tangent));
   return Math.max(.4, Math.max(size.x,size.y,size.z)*1.95,(distance+size.z/2)*1.15);
 }
-const expectedBones = ['root', 'body', 'arm.L', 'arm.R', 'leg.L', 'leg.R'];
 // GLTFLoader removes punctuation in names for animation track binding.
 // Preserve raw names in the report; canonical aliases are for validation only.
 const boneAliases = { armL:'arm.L', armR:'arm.R', legL:'leg.L', legR:'leg.R' };
 const canonicalBoneName = name => boneAliases[name] || name;
-const sampleSpecs = [
-  { label: 'rest', blenderFrame: 1, gltfFrame: 0, timeSeconds: 1/12 },
-  { label: 'arms', blenderFrame: 7, gltfFrame: 6, timeSeconds: 7/12 },
-  { label: 'legs', blenderFrame: 13, gltfFrame: 12, timeSeconds: 13/12 },
-];
+const activeSamples = () => state.model?.sampleSpecs || [];
+function showMotionLabels(profile) {
+  const specs = profile?.sampleSpecs || [];
+  ['rest','arms','legs'].forEach((id,index) => { $(id).textContent = specs[index]?.buttonLabel || ['休止','動作1','動作2'][index]; });
+  $('motion-note').textContent = profile?.motionMode === 'hop_tilt'
+    ? 'v1.2.0のにんにくは手足なしです。rootの跳ねとbodyの傾きを検証します。'
+    : profile?.motionMode === 'limbs_fk'
+      ? 'このGLBは6ボーンの手足FKです。左右の腕・脚を個別に検証します。'
+      : '対応する配布GLBを選ぶと、その版に合う操作と検証へ切り替わります。';
+}
 const round = x => Number(Number(x).toFixed(7));
 const vec = a => a.toArray().map(round);
 const boxJSON = box => box.isEmpty() ? null : { min: vec(box.min), max: vec(box.max), size: vec(box.getSize(new THREE.Vector3())) };
@@ -49,6 +54,8 @@ const reportDOM = () => {
     canonicalBones:r.structure.canonicalBones, rawBones:r.structure.uniqueBones,
     skinnedMeshCount:r.structure.skinnedMeshCount, meshCount:r.structure.meshCount,
     textureCount:r.textures.length, loaderErrors:r.loaderErrors,
+    allChecksPassed:Object.values(r.checks).every(value=>value===true),
+    jointWorldMotionFromRest:r.jointWorldMotionFromRest,
     samples:r.samples.map((s,i)=>({label:s.label,timeSeconds:s.timeSeconds,maximumVertexDeltaFromRest:s.maximumVertexDeltaFromRest,nonFiniteVertices:s.nonFiniteVertices,jointRotationDeltaRadiansFromRest:r.jointRotationDeltaRadiansFromRest[i]}))
   } : r;
   $('check-summary').textContent = JSON.stringify(summary,null,2);
@@ -116,7 +123,7 @@ function disposeModel() {
       }
     });
   }
-  Object.assign(state, { root: null, mixer: null, action: null, clip: null, skinned: [], meshes: [], bones: [], baseline: new Map(), samples: [] });
+  Object.assign(state, { root: null, mixer: null, action: null, clip: null, skinned: [], meshes: [], bones: [], nodeNames: [], baseline: new Map(), samples: [] });
 }
 
 function updateBones() {
@@ -182,6 +189,7 @@ function capture(spec, keepBaseline = false) {
 }
 
 function seek(spec) {
+  if (!spec || !state.action) return;
   state.playing = false;
   state.action.paused = false;
   state.action.enabled = true;
@@ -231,6 +239,8 @@ function vertexColorInfo() {
 }
 function sampleAll() {
   if (!state.action) return;
+  const sampleSpecs = activeSamples();
+  const expectedBones = state.model.expectedBones;
   state.baseline.clear();
   state.samples = sampleSpecs.map((s, i) => { seek(s); return capture(s, i === 0); });
   const present = new Set(state.bones.map(b => canonicalBoneName(b.name)));
@@ -242,34 +252,40 @@ function sampleAll() {
     const angle = rest && posed ? new THREE.Quaternion().fromArray(rest.localQuaternion).normalize().angleTo(new THREE.Quaternion().fromArray(posed.localQuaternion).normalize()) : null;
     return [name, angle === null ? null : round(angle)];
   })));
+  const worldMotion = state.samples.map(sample => Object.fromEntries(expectedBones.map(name => {
+    const rest = state.samples[0].bones.find(bone => bone.canonicalName === name);
+    const posed = sample.bones.find(bone => bone.canonicalName === name);
+    if (!rest || !posed) return [name, null];
+    const restRotation = new THREE.Quaternion().fromArray(rest.worldQuaternion).normalize();
+    const posedRotation = new THREE.Quaternion().fromArray(posed.worldQuaternion).normalize();
+    const delta = posedRotation.clone().multiply(restRotation.clone().invert()).normalize();
+    return [name, {
+      translationDeltaLocal: posed.localPosition.map((value,index) => round(value-rest.localPosition[index])),
+      translationDeltaWorld: posed.worldPosition.map((value,index) => round(value-rest.worldPosition[index])),
+      rotationAngleRadians: round(restRotation.angleTo(posedRotation)),
+      rotationDeltaQuaternionWorld: vec(delta)
+    }];
+  })));
+  const skeletonJointCounts = state.skinned.map(mesh => ({mesh:named(mesh), joints:mesh.skeleton.bones.length}));
+  const checks = checksForProfile(state.model, {
+    samples:state.samples, textures, vertexColors, jointDeltas, worldMotion,
+    presentBones:[...present], skeletonJointCounts, nodeNames:state.nodeNames,
+    clipName:state.clip.name, clipDurationSeconds:state.clip.duration,
+    skinnedMeshCount:state.skinned.length, loaderErrors:state.loadErrors
+  });
   state.report = {
     schema: 'yakumigumi-threejs-runtime-v1',
     status: 'sampled_runtime; visual_reference_comparison_still_required',
     timestampUTC: new Date().toISOString(),
     engine: { name: 'Three.js', revision: THREE.REVISION },
-    model: { label: state.model.label, source: state.model.publicPath || 'local_browser_file', testedGLBSha256: state.model.testedGLBSha256, testedGLBBytes: state.model.testedGLBBytes, clipName: state.clip.name, clipDurationSeconds: round(state.clip.duration), clipTrackCount: state.clip.tracks.length },
-    frameMapping: 'Original exported GLB timestamps preserve Blender frames: 1/7/13 at 12 fps -> 1/12, 7/12, 13/12 seconds',
-    structure: { skinnedMeshCount: state.skinned.length, meshCount: state.meshes.length, uniqueBones: [...new Set(state.bones.map(b=>b.name))], canonicalBones: [...present], skeletonJointCounts: state.skinned.map(m => ({ mesh: named(m), joints: m.skeleton.bones.length })) },
+    model: { label: state.model.label, profileKey:state.model.key, motionMode:state.model.motionMode, source: state.model.publicPath || 'local_browser_file', publishedPath:state.model.publishedPath || state.model.publicPath, expectedGLBSha256:state.model.expectedGLBSha256, expectedGLBBytes:state.model.expectedGLBBytes || null, testedGLBSha256: state.model.testedGLBSha256, testedGLBBytes: state.model.testedGLBBytes, clipName: state.clip.name, clipDurationSeconds: round(state.clip.duration), clipTrackCount: state.clip.tracks.length },
+    frameMapping: state.model.frameMapping,
+    structure: { skinnedMeshCount: state.skinned.length, meshCount: state.meshes.length, uniqueBones: [...new Set(state.bones.map(b=>b.name))], canonicalBones: [...present], skeletonJointCounts, nodeNames:state.nodeNames },
     textures, vertexColors, expectedEmbeddedTextureCount:0, loaderErrors: [...state.loadErrors],
     jointRotationDeltaRadiansFromRest: jointDeltas,
-    checks: {
-      loaded: true,
-      expectedClipPresent: state.clip.name === state.model.clip,
-      skinnedMeshesPresent: state.skinned.length > 0,
-      expectedSixBonesPresent: expectedBones.every(b => present.has(b)),
-      finiteDeformedVertices: state.samples.every(s => s.nonFiniteVertices === 0),
-      armsPoseChangesVertices: state.samples[1].maximumVertexDeltaFromRest > 1e-5,
-      legsPoseChangesVertices: state.samples[2].maximumVertexDeltaFromRest > 1e-5,
-      bothArmJointRotationsChange: ['arm.L','arm.R'].every(name => jointDeltas[1][name] > 1e-5),
-      bothLegJointRotationsChange: ['leg.L','leg.R'].every(name => jointDeltas[2][name] > 1e-5),
-      allReferencedTextureImagesReady: textures.every(t => t.ready),
-      loaderReportedNoMissingResources: state.loadErrors.length === 0,
-      expectedVertexPaintAndMaterialCount: vertexColors.length === state.model.expectedMeshCount,
-      bakedVertexColorsPresentFiniteAndUsed: vertexColors.length > 0 && vertexColors.every(row=>row.colorAttributePresent && row.finite && row.colorVertices===row.positionVertices && row.allMaterialsUseVertexColors),
-      noRasterMapsExpectedOrMissing: textures.length === 0 && state.loadErrors.length === 0,
-      independentlyWeightedLeftAndRightArmsDeform: ['arm.L','arm.R'].every(name=>state.samples[1].limbDeformation[name].dominantWeightedVertices>0 && state.samples[1].limbDeformation[name].movedVertices>0 && state.samples[1].limbDeformation[name].maximumVertexDeltaFromRest>1e-5),
-      independentlyWeightedLeftAndRightLegsDeform: ['leg.L','leg.R'].every(name=>state.samples[2].limbDeformation[name].dominantWeightedVertices>0 && state.samples[2].limbDeformation[name].movedVertices>0 && state.samples[2].limbDeformation[name].maximumVertexDeltaFromRest>1e-5)
-    },
+    jointWorldMotionFromRest: worldMotion,
+    motionExpectations:state.model.motionExpectations || null,
+    checks,
     samples: state.samples
   };
   seek(sampleSpecs[0]);
@@ -281,6 +297,7 @@ async function loadModel(model, buffer = null) {
   const generation = ++state.generation;
   state.loading = true;
   controlsEnabled(false);
+  showMotionLabels(null);
   status(model.label + ' を読み込み中');
   disposeModel();
   state.model = model;
@@ -301,17 +318,23 @@ async function loadModel(model, buffer = null) {
     const digest = await crypto.subtle.digest('SHA-256', testedBytes);
     const testedGLBSha256 = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, '0')).join('');
     // Hash and parse the exact same bytes, including files selected locally.
+    state.model = { ...model, testedGLBSha256, testedGLBBytes:testedBytes.byteLength };
     const profile = models.find(item=>item.expectedGLBSha256===testedGLBSha256);
-    if(profile) model={...model,...profile,publicPath:buffer?'local_browser_file':model.publicPath};
+    if (!profile) throw new Error('対応する配布GLBとSHA256が一致しません。このファイルの動作検証は未対応です。');
+    if (Number.isInteger(profile.expectedGLBBytes) && profile.expectedGLBBytes !== testedBytes.byteLength) throw new Error('配布GLBのサイズと一致しません');
+    if (!Array.isArray(profile.expectedBones) || profile.sampleSpecs?.length !== 3 || !Number.isInteger(profile.expectedMeshCount)) throw new Error('モデル検証profileの設定が不完全です');
+    model = {...profile, url:model.url, publishedPath:profile.publicPath, publicPath:buffer?'local_browser_file':profile.publicPath};
     const gltf = await loader.parseAsync(testedBytes, baseURL);
     if (generation !== state.generation) return;
     state.model = { ...model, testedGLBSha256, testedGLBBytes: testedBytes.byteLength };
+    showMotionLabels(state.model);
     const selectedProfile=models.findIndex(item=>item.key===model.key);
     if(selectedProfile>=0) $('model-select').value=selectedProfile;
     state.root = gltf.scene;
     scene.add(state.root);
     const boneIDs = new Set();
     state.root.traverse(o => {
+      if(o.name) state.nodeNames.push(o.name);
       if (o.isMesh) { o.frustumCulled = false; state.meshes.push(o); }
       if (o.isSkinnedMesh) state.skinned.push(o);
       if (o.isBone && !boneIDs.has(o.uuid)) { boneIDs.add(o.uuid); state.bones.push(o); }
@@ -335,14 +358,14 @@ async function loadModel(model, buffer = null) {
     state.loading = false;
   } catch (error) {
     state.loading = false;
-    state.report = { status: 'load_failed', model: model.label, error: String(error.message || error), loaderErrors: state.loadErrors };
+    state.report = { status: 'load_failed', model: state.model, error: String(error.message || error), loaderErrors: state.loadErrors };
     reportDOM(); status('読込失敗: ' + (error.message || error)); controlsEnabled(false);
   }
 }
 
-$('rest').onclick = () => seek(sampleSpecs[0]);
-$('arms').onclick = () => seek(sampleSpecs[1]);
-$('legs').onclick = () => seek(sampleSpecs[2]);
+$('rest').onclick = () => seek(activeSamples()[0]);
+$('arms').onclick = () => seek(activeSamples()[1]);
+$('legs').onclick = () => seek(activeSamples()[2]);
 $('sample-all').onclick = sampleAll;
 $('play').onclick = () => { state.action.paused = false; state.playing = true; clock.getDelta(); status(state.model.label + ' · 動作を再生中'); };
 $('stop').onclick = () => { state.playing = false; state.action.paused = true; status(state.model.label + ' · 停止 / ' + round(state.action.time) + '秒'); };
@@ -356,8 +379,7 @@ $('local-file').onchange = async e => {
   const file = e.target.files[0]; if (!file) return;
   const label = file.name.replace(/\.glb$/i,'');
   const key = label.replace(/[^a-z0-9_-]+/gi,'-');
-  const guessedName = label.replace(/_rigged$/i,'') + '_FK_motion_check';
-  await loadModel({ key, label, clip: guessedName, publicPath: 'local_browser_file' }, await file.arrayBuffer());
+  await loadModel({ key, label, publicPath: 'local_browser_file' }, await file.arrayBuffer());
 };
 
 let models = [];
@@ -366,8 +388,9 @@ async function loadSelected() {
   if (model?.url) await loadModel(model);
   else {
     disposeModel(); state.model=null; controlsEnabled(false);
+    showMotionLabels(model);
     state.report={status:'choose_local_GLB',model:model?.label || null}; reportDOM();
-    status('v1.1.0のZIPを展開し、ローカルのGLBからファイルを選択してください');
+    status('対応するRelease ZIPを展開し、ローカルのGLBからファイルを選択してください');
   }
 }
 $('reload').onclick = loadSelected;

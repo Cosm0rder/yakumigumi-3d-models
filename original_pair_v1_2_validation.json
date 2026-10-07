@@ -1,0 +1,373 @@
+{
+  "schema": "yakumigumi.revision-validation.v1",
+  "version": "1.2.0",
+  "local_validation_passed": true,
+  "threejs_runtime_passed": true,
+  "actual_hd_frames_visually_reviewed": true,
+  "browser_glb_sha256": {
+    "glb/Ginger_rigged.glb": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2",
+    "glb/Garlic_body_motion.glb": "39d9b9591d09de0c980dabf6dc490164d148f2919f95043fe3e66da274fdf9c6"
+  },
+  "visually_reviewed_mp4_sha256": {
+    "animations/Ginger_FK_motion_1080p.mp4": "40ba8d17fa4372fd74dea06b8bfe86f80c0eb6659e49a41287f58b427249455a",
+    "animations/Garlic_body_motion_1080p.mp4": "8e9a22049452c6db600b856da4f6ef15cb15cb9c50052c75d33b7fd722f0ef37"
+  },
+  "numerical_validation": {
+    "schema": "yakumigumi.hd-validation-summary.v1",
+    "status": "PASS",
+    "independent_numerical_checks_passed": true,
+    "native": {
+      "original_mesh_count": 15,
+      "geometry_uv_materials_shape_keys_identical": true,
+      "material_and_group_graphs_identical": true,
+      "six_facial_drivers_identical": true,
+      "packed_paint_bytes_identical": true,
+      "missing_face_paint": 0,
+      "bones": [
+        "root",
+        "body"
+      ]
+    },
+    "ginger_model_and_glb_byte_copy_unchanged": true,
+    "garlic_glb": {
+      "fresh_factory_import_passed": true,
+      "skin": {
+        "joint_names": [
+          "root",
+          "body"
+        ],
+        "primitive_count": 15,
+        "all_body_face_vertices_body_weight_one": true,
+        "normalized_skin_weights": true,
+        "finite_position_vertex_colors": true,
+        "image_resources": 0,
+        "face_paint": "Existing baked vertex colors; native PNGs are separately checked byte-for-byte.",
+        "external_resources": 0
+      },
+      "color_representation": {
+        "all_fifteen_meshes_prescribed_roundtrip_verified": true,
+        "raw_float_colors_byte_identical_claimed": false,
+        "max_raw_linear_component_delta": 0.004459798336029053,
+        "max_expected_roundtrip_residual": 0.0,
+        "representation": "Old GLB float linear RGB is imported through Blender's BYTE_COLOR setter and exported from its linear .color readback as float RGBA. Actual fresh-import .color and .color_srgb representations are strictly identical; raw float color bytes differ through LUT/sRGB8bit quantization. Native packed PNG bytes are unchanged.",
+        "max_raw_srgb8bit_code_delta": 0.5129206071430048,
+        "max_new_srgb8bit_grid_residual": 1.4651354307559927e-07,
+        "roundtrip_expected_value_source": "Actual fresh source import BYTE_COLOR .color per oriented triangle corner; independent Python nearest rounding is not substituted for Blender's LUT.",
+        "known_cheek_example_old_linear_rgb": [
+          1,
+          0.095,
+          0.135
+        ],
+        "known_cheek_example_new_linear_rgb": [
+          1,
+          0.09530748426914215,
+          0.13563336431980133
+        ]
+      },
+      "clip_seconds": [
+        0,
+        4
+      ],
+      "sample_seconds": [
+        0,
+        0.5,
+        1.5
+      ]
+    },
+    "videos": [
+      {
+        "file": "animations/Ginger_FK_motion_1080p.mp4",
+        "sha256": "40ba8d17fa4372fd74dea06b8bfe86f80c0eb6659e49a41287f58b427249455a",
+        "bytes": 325796,
+        "passed": true,
+        "stream": {
+          "codec_name": "h264",
+          "profile": "High",
+          "width": 1080,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "4.000000",
+          "nb_frames": "96",
+          "nb_read_frames": "96",
+          "bit_rate": "648994",
+          "bits_per_raw_sample": "8"
+        },
+        "format": {
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "duration": "4.000000",
+          "size": "325796",
+          "bit_rate": "651592"
+        },
+        "full_decode_frames": 96,
+        "decoded_sample_frames": [
+          0,
+          12,
+          36,
+          95
+        ]
+      },
+      {
+        "file": "animations/Garlic_body_motion_1080p.mp4",
+        "sha256": "8e9a22049452c6db600b856da4f6ef15cb15cb9c50052c75d33b7fd722f0ef37",
+        "bytes": 369973,
+        "passed": true,
+        "stream": {
+          "codec_name": "h264",
+          "profile": "High",
+          "width": 1080,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "4.000000",
+          "nb_frames": "96",
+          "nb_read_frames": "96",
+          "bit_rate": "737348",
+          "bits_per_raw_sample": "8"
+        },
+        "format": {
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "duration": "4.000000",
+          "size": "369973",
+          "bit_rate": "739946"
+        },
+        "full_decode_frames": 96,
+        "decoded_sample_frames": [
+          0,
+          12,
+          36,
+          95
+        ]
+      }
+    ],
+    "asset_bytes_unchanged_during_validation": true,
+    "final_movie_render_settings": [
+      {
+        "file": "animations/Ginger_FK_motion_1080p.mp4",
+        "mp4_sha256": "40ba8d17fa4372fd74dea06b8bfe86f80c0eb6659e49a41287f58b427249455a",
+        "engine": "BLENDER_EEVEE_NEXT",
+        "samples": 64,
+        "cycles_denoising": null,
+        "cycles_denoiser": null,
+        "color_management": {
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "exposure": 0.6499999761581421,
+          "gamma": 1.0
+        },
+        "lights": [
+          {
+            "name": "Presentation Fill",
+            "type": "AREA",
+            "energy": 100.0,
+            "color": [
+              1.0,
+              0.8700000047683716,
+              0.699999988079071
+            ]
+          },
+          {
+            "name": "Presentation Key",
+            "type": "AREA",
+            "energy": 350.0,
+            "color": [
+              1.0,
+              0.9399999976158142,
+              0.8399999737739563
+            ]
+          },
+          {
+            "name": "Presentation Rim",
+            "type": "AREA",
+            "energy": 135.0,
+            "color": [
+              1.0,
+              0.8799999952316284,
+              0.7200000286102295
+            ]
+          },
+          {
+            "name": "Presentation lower soft fill",
+            "type": "AREA",
+            "energy": 80.0,
+            "color": [
+              1.0,
+              0.9399999976158142,
+              0.8399999737739563
+            ]
+          }
+        ],
+        "evidence": "Producer runtime scene snapshot matched to independently decoded MP4 SHA/size; not inferred from pixels"
+      },
+      {
+        "file": "animations/Garlic_body_motion_1080p.mp4",
+        "mp4_sha256": "8e9a22049452c6db600b856da4f6ef15cb15cb9c50052c75d33b7fd722f0ef37",
+        "engine": "BLENDER_EEVEE_NEXT",
+        "samples": 64,
+        "cycles_denoising": null,
+        "cycles_denoiser": null,
+        "color_management": {
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "exposure": 0.6499999761581421,
+          "gamma": 1.0
+        },
+        "lights": [
+          {
+            "name": "Presentation Fill",
+            "type": "AREA",
+            "energy": 100.0,
+            "color": [
+              1.0,
+              0.8700000047683716,
+              0.699999988079071
+            ]
+          },
+          {
+            "name": "Presentation Key",
+            "type": "AREA",
+            "energy": 350.0,
+            "color": [
+              1.0,
+              0.9399999976158142,
+              0.8399999737739563
+            ]
+          },
+          {
+            "name": "Presentation Rim",
+            "type": "AREA",
+            "energy": 135.0,
+            "color": [
+              1.0,
+              0.8799999952316284,
+              0.7200000286102295
+            ]
+          },
+          {
+            "name": "Presentation lower soft fill",
+            "type": "AREA",
+            "energy": 80.0,
+            "color": [
+              1.0,
+              0.9399999976158142,
+              0.8399999737739563
+            ]
+          }
+        ],
+        "evidence": "Producer runtime scene snapshot matched to independently decoded MP4 SHA/size; not inferred from pixels"
+      }
+    ],
+    "additional_ginger_actual_decode": {
+      "frame": 24,
+      "seconds": 1,
+      "passed": true,
+      "png_sha256": "eaebdfedb4782d17b6b24e8b431ae982b19ab69c16e522433d6a6397b6133c3e"
+    },
+    "visual_appearance_reviewed": false,
+    "browser_validation_included": false,
+    "limitations": [
+      "Native material/geometry/paint preservation is proven separately from rendered pixel identity.",
+      "HD engine/samples/denoising/color management are recorded from final runtime metadata matched to actual MP4 bytes; trial settings are not final evidence.",
+      "Ginger native blend/GLB retain their original 12fps/two-second action; only the HD MP4 loops at 24fps/four seconds.",
+      "Garlic GLB retains baked vertex color/PBR appearance; native facial drivers are not GLB controls.",
+      "Garlic GLB float colors undergo the prescribed Blender BYTE_COLOR sRGB8bit roundtrip; raw float bytes are not identical. Native packed PNG bytes are unchanged.",
+      "Browser playback/camera/resize checks are separate from this Blender and video validator."
+    ]
+  },
+  "threejs_validation": {
+    "passed": true,
+    "test_scope": "New Garlic full runtime/control/390px resize validation; unchanged Ginger GLB compatibility runtime and local file-picker smoke on the same new viewer source.",
+    "viewer_source_inventory_sha256": "c37fa0906081a956e3ad9533030c698c2a8704347d61a9e0cf9c40c3bcb4db20",
+    "viewer_main_sha256": "83641e24e3626dd4585e5f9d4c17808c5c2d57247e25c7aa29b6867b75d9778c",
+    "viewer_profile_checks_sha256": "83fed9f78998952a0387ad011b59ace188be576ea91bc81d6703189c37e8209e",
+    "source_files_verified": 11,
+    "main_and_profile_source_lf_verified": true,
+    "models": {
+      "ginger": {
+        "passed": true,
+        "sha256": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2",
+        "bytes": 26312140,
+        "checks_passed": 16,
+        "checks_total": 16,
+        "file_picker_verified": true,
+        "camera_resize_verified": false,
+        "profile_key": "ginger",
+        "motion_mode": "limbs_fk",
+        "mesh_count": 6,
+        "skinned_mesh_count": 6,
+        "bones": [
+          "root",
+          "body",
+          "arm.L",
+          "arm.R",
+          "leg.L",
+          "leg.R"
+        ],
+        "raster_maps": 0,
+        "vertex_paint_all_meshes_finite_and_used": true,
+        "loader_errors": []
+      },
+      "newGarlic": {
+        "passed": true,
+        "sha256": "39d9b9591d09de0c980dabf6dc490164d148f2919f95043fe3e66da274fdf9c6",
+        "bytes": 4344016,
+        "checks_passed": 16,
+        "checks_total": 16,
+        "file_picker_verified": true,
+        "camera_resize_verified": true,
+        "profile_key": "garlic-v1-2",
+        "motion_mode": "hop_tilt",
+        "mesh_count": 15,
+        "skinned_mesh_count": 15,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "raster_maps": 0,
+        "vertex_paint_all_meshes_finite_and_used": true,
+        "loader_errors": []
+      }
+    },
+    "newGarlic_static_structure": {
+      "glbSkinsArrayCount": 1,
+      "skinJointCounts": [
+        2
+      ],
+      "meshCount": 15
+    },
+    "console_errors": [],
+    "console_warnings": [],
+    "console_scope": "Supported CUA captured console warn/error buffer for the test tab. No separate raw browser exception, WebGL context-loss or unhandled-rejection event listener was installed. Loader resource errors were independently empty.",
+    "ginger_camera_resize_scope": "Not repeated in this revision compatibility smoke. Prior v1.1.0 validation is separate evidence; this result does not claim a new Ginger camera/resize test.",
+    "appearance_scope": "Visual renderer check confirms visible face and no four appendages on new Garlic; Ginger shows retained hands/feet and painted bands. GLB is baked vertex-color/PBR approximation; Blender is authoritative and Garlic facial drivers remain Blender only.",
+    "fixture_profiles_equal_public_registry_except_url_fields": true
+  },
+  "appearance_preserved": "Original mesh/UV/material graphs/packed paint and facial drivers are validated; render lighting and framing intentionally adjusted.",
+  "quality_change": {
+    "old_render": {
+      "dimensions": [
+        256,
+        256
+      ],
+      "samples": 4,
+      "cycles_denoising": false,
+      "fps": 12,
+      "duration_seconds": 2
+    },
+    "new_video": {
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "fps": 24,
+      "duration_seconds": 4,
+      "decoded_frames_each": 96
+    },
+    "paint_images_or_character_shaders_changed": false,
+    "soft_fill_reflection_suppressed": true,
+    "past_dance_comparison_scope": "Two past dance candidates were actually played in private Drive at decoded 720px and near-front frames visually compared. Raw original bitrate and exact mesh identity with those videos were not independently proven; no movie/background/borrowed motion is included."
+  },
+  "old_release_preservation": "v1.1.0/v1.0.0 are retained separate releases. An anonymous pre-publication metadata/tag baseline is recorded; a separate post-publication comparison and download record is required before delivery is reported complete."
+}

@@ -2,19 +2,64 @@
   "models": [
     {
       "key": "ginger",
-      "label": "しょうがちゃん",
+      "label": "しょうがちゃん（v1.1.0 / v1.2.0共通GLB）",
       "publicPath": "v1.1.0/glb/Ginger_rigged.glb",
       "clip": "Ginger_FK_motion_check",
+      "motionMode": "limbs_fk",
+      "expectedBones": ["root", "body", "arm.L", "arm.R", "leg.L", "leg.R"],
+      "sampleSpecs": [
+        {"label":"rest", "buttonLabel":"休止：frame 1", "blenderFrame":1, "timeSeconds":0.08333333333333333},
+        {"label":"arms", "buttonLabel":"腕：frame 7", "blenderFrame":7, "timeSeconds":0.5833333333333334},
+        {"label":"legs", "buttonLabel":"脚：frame 13", "blenderFrame":13, "timeSeconds":1.0833333333333333}
+      ],
+      "frameMapping":"Blender frames 1/7/13 at 12 fps -> 1/12, 7/12, 13/12 seconds",
       "expectedMeshCount": 6,
       "expectedGLBSha256": "d6c8438556c3d3883954afd72e5027d5735c146dd5467f90cc3a59912659eae2"
     },
     {
       "key": "garlic",
-      "label": "にんにく",
+      "label": "にんにく（v1.1.0・手足付き旧版）",
       "publicPath": "v1.1.0/glb/Garlic_rigged.glb",
       "clip": "Garlic_FK_motion_check",
+      "motionMode": "limbs_fk",
+      "expectedBones": ["root", "body", "arm.L", "arm.R", "leg.L", "leg.R"],
+      "sampleSpecs": [
+        {"label":"rest", "buttonLabel":"休止：frame 1", "blenderFrame":1, "timeSeconds":0.08333333333333333},
+        {"label":"arms", "buttonLabel":"腕：frame 7", "blenderFrame":7, "timeSeconds":0.5833333333333334},
+        {"label":"legs", "buttonLabel":"脚：frame 13", "blenderFrame":13, "timeSeconds":1.0833333333333333}
+      ],
+      "frameMapping":"Blender frames 1/7/13 at 12 fps -> 1/12, 7/12, 13/12 seconds",
       "expectedMeshCount": 19,
       "expectedGLBSha256": "f4fa6f099a6e4f631392613c7d87b917573d5def739aecbb178696ccadac030d"
+    },
+    {
+      "key": "garlic-v1-2",
+      "label": "にんにく（v1.2.0・手足なし）",
+      "publicPath": "v1.2.0/glb/Garlic_body_motion.glb",
+      "clip": "Garlic_Body_bounce_check",
+      "motionMode": "hop_tilt",
+      "expectedBones": ["root", "body"],
+      "expectedClipDurationSeconds": 4,
+      "expectedMeshCount": 15,
+      "expectedGLBSha256": "39d9b9591d09de0c980dabf6dc490164d148f2919f95043fe3e66da274fdf9c6",
+      "expectedGLBBytes": 4344016,
+      "sampleSpecs": [
+        {"label":"rest", "buttonLabel":"休止：frame 0", "blenderFrame":0, "timeSeconds":0},
+        {"label":"hop", "buttonLabel":"跳ね：frame 12", "blenderFrame":12, "timeSeconds":0.5},
+        {"label":"tilt", "buttonLabel":"傾き：frame 36", "blenderFrame":36, "timeSeconds":1.5}
+      ],
+      "frameMapping":"Blender frames 0/12/36 at 24 fps -> 0, 0.5, 1.5 seconds",
+      "forbiddenNodePatterns": [
+        "(?:^|[\\s._-])(?:arm|leg|hand|foot|feet|limb|appendage)s?(?:[._-]?[lr])?(?:$|[\\s._-])",
+        "Garlic[ _.-]*added[ _.-]*rounded[ _.-]*(?:arm|leg)[ _.-]*[lr](?:$|[ _.-])"
+      ],
+      "motionExpectations": {
+        "hopRootTranslation": [0, 0.075, 0],
+        "translationTolerance": 0.00001,
+        "tiltBodyAngleRadians": 0.13962634015954636,
+        "tiltBodyWorldAxis": "z",
+        "rotationTolerance": 0.0001
+      }
     }
   ]
 }

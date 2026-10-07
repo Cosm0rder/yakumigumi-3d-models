@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" href="data:,"><title>やくみ組 GLB・手足の動作確認</title>
+<link rel="icon" href="data:,"><title>やくみ組 GLB・動作確認</title>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#f6f2e9;color:#352a24;font:15px system-ui,sans-serif}
 header{padding:18px 24px;background:#fffaf0;border-bottom:1px solid #d6c8b7}h1{font-size:21px;margin:0 0 5px}p{margin:6px 0}
@@ -19,13 +19,14 @@ button{padding:8px 12px;border:1px solid #b2a08b;background:#fff8e7;border-radiu
 <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body>
-<header><h1>やくみ組 GLB・手足の動作確認</h1><p>1体ずつ読み込み、腕・脚の動きと色・輪郭を確認します。</p></header>
+<header><h1>やくみ組 GLB・動作確認</h1><p>v1.2.0のしょうがちゃん・にんにくと、旧v1.1.0に対応します。動作と色・輪郭を1体ずつ確認します。</p></header>
 <main>
 <section class="stage" aria-label="モデル表示"><canvas id="viewport"></canvas><div id="status" role="status">準備中</div></section>
 <aside class="controls">
 <label for="model-select">配布モデル情報</label><select id="model-select"><option>一覧を読み込み中</option></select><button id="reload" hidden>選択モデルを読み込む</button>
 <label for="local-file">展開したモデルのGLBを選択</label><input id="local-file" type="file" accept=".glb"><p class="note">選んだファイルはこの画面内で読みます。</p>
-<div><button id="rest" disabled>休止：frame 1</button><button id="arms" disabled>腕：frame 7</button><button id="legs" disabled>脚：frame 13</button></div>
+<div><button id="rest" disabled>休止</button><button id="arms" disabled>動作1</button><button id="legs" disabled>動作2</button></div>
+<p class="note" id="motion-note">対応する配布GLBを選ぶと、その版に合う操作と検証へ切り替わります。</p>
 <div><button id="play" disabled>動作を再生</button><button id="stop" disabled>停止</button><button id="sample-all" disabled>3ポーズを検証</button></div>
 <div><button id="front">正面</button><button id="oblique">斜め</button><button id="side">側面</button></div>
 <p class="note">表示上でドラッグして回転できます。スクロールで距離を調整します。</p>
