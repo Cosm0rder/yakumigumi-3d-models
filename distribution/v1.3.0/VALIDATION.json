@@ -1,0 +1,778 @@
+{
+  "schema": "yakumigumi.public-distribution-validation.v1",
+  "release_tag": "v1.3.0",
+  "status": "passed_with_provisional_limits",
+  "tested_blender_version": "4.3.2",
+  "native_model_count": 11,
+  "glb_model_count": 11,
+  "video_count": 9,
+  "original_shape_unverified": [
+    "Myoga",
+    "Okra"
+  ],
+  "scope": "Public model copies, rig and animation reload, embedded texture pixels, video packet equivalence and metadata checks. Visual fidelity to original images is unverified for provisional characters.",
+  "privacy_scope": "Public copies contain package-relative file names; input reports, local source paths and original reference images are outside this distribution.",
+  "characters": [
+    {
+      "character": "Wasabi",
+      "display_name": "わさび",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Wasabi/model.blend",
+        "bytes": 6991296,
+        "sha256": "f1bf58ee181a112b1f45afc82f6a7254bc99ae39d102bb116d6194c3f473cbe6",
+        "reload": "passed",
+        "mesh_count": 21,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Wasabi_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Wasabi/model.glb",
+        "bytes": 2758844,
+        "sha256": "8506799cada68acf70bb4283a1ee3fc9d08a2872729fdd750d41acb1a50e1449",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 20,
+        "vertex_count": 41463,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Wasabi_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 6,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 307379,
+        "sha256": "cb35f53c6ded234a0d81e64037aa718fea54c779b463d325c31cfe521e1c6eb5",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Wasabi/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Negi",
+      "display_name": "ねぎ",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Negi/model.blend",
+        "bytes": 14016204,
+        "sha256": "580fe6c8f67e603e532c6bd48fa421c591195a6f87aa091a1b36b6771155bae5",
+        "reload": "passed",
+        "mesh_count": 15,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Negi_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Negi/model.glb",
+        "bytes": 5904536,
+        "sha256": "b8016f48b8a3f395fdfb21c51df2270e3be81c1324f1d20d44c4626680d77621",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 15,
+        "vertex_count": 90204,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Negi_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 6,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 209025,
+        "sha256": "0cfa1cb28c0672eec2a6b4bc55ca3fce6ab4ad24fe3c07d318300ea3f087f9b4",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Negi/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Mustard",
+      "display_name": "からし",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Mustard/model.blend",
+        "bytes": 3180032,
+        "sha256": "aa72c501ed702d834c6ff7a9175146a74896a2e6908161a40ec02d76001ff82c",
+        "reload": "passed",
+        "mesh_count": 54,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Mustard_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Mustard/model.glb",
+        "bytes": 1154880,
+        "sha256": "a3eb2af6834e3722466d6be98d5ab07d6a474b25ec6605f32faf6e648120b365",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 54,
+        "vertex_count": 13606,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Mustard_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 8,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 270789,
+        "sha256": "940b97cef5567dd37c087951f96086ab5323c43c18841e6ed59743566aadd675",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Mustard/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Chili",
+      "display_name": "唐辛子",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Chili/model.blend",
+        "bytes": 6235476,
+        "sha256": "5695df8c1ed99e4d4ff3bf48c9e24135d468b8126a6c3f1635483d3a319ab663",
+        "reload": "passed",
+        "mesh_count": 9,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Chili_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Chili/model.glb",
+        "bytes": 2619956,
+        "sha256": "71f6047a8d5fd3037953f193c4aee2a3d98915ccb44c8b6405938f110f4db97f",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 9,
+        "vertex_count": 36118,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Chili_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 4,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 220865,
+        "sha256": "0b204206c4a14d9169fce6e240d6f07623588f061e7893105057b9fa9c30a54e",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Chili/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Daikon",
+      "display_name": "大根おろし",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Daikon/model.blend",
+        "bytes": 4858396,
+        "sha256": "15d6202a9a0819831cca924ec5bf349736a46aac93b714fde4c8be0935e6685b",
+        "reload": "passed",
+        "mesh_count": 50,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Daikon_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Daikon/model.glb",
+        "bytes": 2015088,
+        "sha256": "71badf08f7ddb6ff642f03860a20b040e71e9bc2064f67ba2ebe4814c7f1226c",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 50,
+        "vertex_count": 25254,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Daikon_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 9,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 627344,
+        "sha256": "78b8f1a327d5e6fa1f51218e71351bd65c5c11d0b7b9e6d104f7a054f26ef5ae",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Daikon/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Yuzu",
+      "display_name": "ゆず",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Yuzu/model.blend",
+        "bytes": 6171492,
+        "sha256": "5af43535672923522c4e45965dcb6e2be69f955c2136337511d416d83f2e67f0",
+        "reload": "passed",
+        "mesh_count": 40,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Yuzu_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Yuzu/model.glb",
+        "bytes": 2350096,
+        "sha256": "fd944492187c979c3ffb0260770f15f1a2ec70c79bbe7591e1c3fe745ca74808",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 40,
+        "vertex_count": 33403,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Yuzu_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 9,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 410310,
+        "sha256": "bba92957f7ab56bf5b69ff3ddf274d9d0943ef302bfdb8929b29f2f5ff85e5be",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Yuzu/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Sansho",
+      "display_name": "サンショウ",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Sansho/model.blend",
+        "bytes": 27349140,
+        "sha256": "185c6e7c3713c975b29fae653f51a775d9515b1cae94e5a61607bcfde981d671",
+        "reload": "passed",
+        "mesh_count": 15,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Sansho_gentle_sway"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Sansho/model.glb",
+        "bytes": 13683792,
+        "sha256": "780ecb2e9af78119b8136f1c50cd88b25a2de6a412d4e6b712fbb41fa7e8204c",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 15,
+        "vertex_count": 180576,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Sansho_gentle_sway",
+            "seconds_range": [
+              0.0416666679084301,
+              3.0416667461395264
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 4,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 299035,
+        "sha256": "e76748147c1538e267befa32c0d1569e6fc79fa65b862ab4336ca1f8a3acf048",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "3.000000",
+        "packet_count": 72,
+        "file": "characters/Sansho/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Ginger",
+      "display_name": "しょうが",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Ginger/model.blend",
+        "bytes": 39454297,
+        "sha256": "1af4fd440e05bef096d51b2a69a025ea63aaea8f14d92cafc9c7b604ea03449b",
+        "reload": "passed",
+        "mesh_count": 6,
+        "bones": [
+          "root",
+          "body",
+          "arm.L",
+          "arm.R",
+          "leg.L",
+          "leg.R"
+        ],
+        "actions": [
+          "Ginger_FK_motion_check"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Ginger/model.glb",
+        "bytes": 26311984,
+        "sha256": "a873e5b1b803c3b95521d6f9bc53c618d536135507ba61fca826244210b0f19f",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 6,
+        "vertex_count": 397634,
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Ginger_FK_motion_check",
+            "seconds_range": [
+              0.0833333358168602,
+              2.0833332538604736
+            ],
+            "channel_count": 18,
+            "moving_channels": 4,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 0,
+        "color_representation": "vertex_color_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 325752,
+        "sha256": "741fa8a1036f152087f4d5f676259e7af314860702c0980e49798d68a4c5730c",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "4.000000",
+        "packet_count": 96,
+        "file": "characters/Ginger/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Garlic",
+      "display_name": "にんにく",
+      "status": "original_images_checked",
+      "native": {
+        "file": "characters/Garlic/model.blend",
+        "bytes": 4841594,
+        "sha256": "0bf5ebeb96e1f2c864b4d11bde69eb312d656d8b3efe1ad07b323c4deb1cc141",
+        "reload": "passed",
+        "mesh_count": 15,
+        "bones": [
+          "root",
+          "body"
+        ],
+        "actions": [
+          "Garlic_Body_bounce_check"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Garlic/model.glb",
+        "bytes": 4343932,
+        "sha256": "915f3b5b00ee40a004d6dd615f9cfe78665bf5551f71db6c0c03bf1a6c691453",
+        "static_validation": "passed",
+        "blender_reload": "passed",
+        "runtime_unit_corner_normals": true,
+        "mesh_count": 15,
+        "vertex_count": 66957,
+        "bones": [
+          "body",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Garlic_Body_bounce_check",
+            "seconds_range": [
+              0.0,
+              4.0
+            ],
+            "channel_count": 6,
+            "moving_channels": 2,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 0,
+        "color_representation": "vertex_color_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "video": {
+        "bytes": 369929,
+        "sha256": "514eb259d6d91715fc2505c1b8c7270b56b99bf4511cf2b109c97dabdb66ef92",
+        "width": 1080,
+        "height": 1080,
+        "fps": "24/1",
+        "duration": "4.000000",
+        "packet_count": 96,
+        "file": "characters/Garlic/motion_1080p.mp4",
+        "compressed_video_packets_and_timing_preserved": true,
+        "private_metadata_scan": "passed"
+      }
+    },
+    {
+      "character": "Myoga",
+      "display_name": "みょうが",
+      "status": "provisional_original_shape_unverified",
+      "native": {
+        "file": "characters/Myoga/model.blend",
+        "bytes": 1813944,
+        "sha256": "4317ccbd1f8b6a500e744b500af2a4432d0b106ba4d7cf51298d7734f4405772",
+        "reload": "passed",
+        "mesh_count": 24,
+        "bones": [
+          "root",
+          "body",
+          "arm.L",
+          "arm.R",
+          "leg.L",
+          "leg.R"
+        ],
+        "actions": [
+          "Myoga_FK_motion_check"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Myoga/model.glb",
+        "bytes": 1155188,
+        "sha256": "2e20ee5c4e9bb0e11600beab327f3c5542b5a304a5ecae1ab1d2703ef0084959",
+        "static_validation": "passed",
+        "blender_reload": "passed_with_provisional_normal_limit",
+        "runtime_unit_corner_normals": false,
+        "mesh_count": 24,
+        "vertex_count": 10462,
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Myoga_FK_motion_check",
+            "seconds_range": [
+              0.0833333358168602,
+              2.0833332538604736
+            ],
+            "channel_count": 18,
+            "moving_channels": 4,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 5,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed",
+        "provisional_runtime_normal_limit": {
+          "strict_runtime_unit_normal_check_passed": false,
+          "serialized_glb_normals_unit_length": true,
+          "runtime_geometry_and_normals_identical_to_original_all_nine_frames": true,
+          "finite_runtime_geometry_and_normals": true,
+          "maximum_zero_corner_count_per_sample": 0,
+          "maximum_nonunit_corner_count_per_sample": 480,
+          "minimum_runtime_corner_normal_length": 0.9416922364974261,
+          "maximum_runtime_corner_normal_length": 1.000000160670826,
+          "maximum_unit_length_error": 0.05830776350257394,
+          "description": "Preserved provisional originals have non-unit evaluated normals during skin deformation. All nine sampled positions and normals match the original exactly and remain finite/nonzero. Original setting-image fidelity is unverified."
+        }
+      }
+    },
+    {
+      "character": "Okra",
+      "display_name": "オクラ",
+      "status": "provisional_original_shape_unverified",
+      "native": {
+        "file": "characters/Okra/model.blend",
+        "bytes": 1823580,
+        "sha256": "285f8618606ee3473c763158f051634126dcd2e1b248cc7ff62912f941588cc5",
+        "reload": "passed",
+        "mesh_count": 31,
+        "bones": [
+          "root",
+          "body",
+          "arm.L",
+          "arm.R",
+          "leg.L",
+          "leg.R"
+        ],
+        "actions": [
+          "Okra_FK_motion_check"
+        ],
+        "geometry_material_rig_actions_preserved": true,
+        "packed_texture_pixels_preserved": true,
+        "nine_frame_evaluated_geometry_preserved": true,
+        "private_metadata_scan": "passed"
+      },
+      "glb": {
+        "file": "characters/Okra/model.glb",
+        "bytes": 856444,
+        "sha256": "5811ab4c4b6138a3eebee80dba418363ebeff37e511f36222e7bc9515ae5e627",
+        "static_validation": "passed",
+        "blender_reload": "passed_with_provisional_normal_limit",
+        "runtime_unit_corner_normals": false,
+        "mesh_count": 31,
+        "vertex_count": 6448,
+        "bones": [
+          "arm.L",
+          "arm.R",
+          "body",
+          "leg.L",
+          "leg.R",
+          "root"
+        ],
+        "animations": [
+          {
+            "name": "Okra_FK_motion_check",
+            "seconds_range": [
+              0.0833333358168602,
+              2.0833332538604736
+            ],
+            "channel_count": 18,
+            "moving_channels": 4,
+            "maximum_loop_endpoint_difference": 0.0
+          }
+        ],
+        "all_resources_embedded": true,
+        "geometry_material_uv_skin_animation_preserved": true,
+        "embedded_image_count": 5,
+        "color_representation": "embedded_texture_images_and_pbr",
+        "embedded_image_pixels_preserved": true,
+        "private_metadata_scan": "passed",
+        "provisional_runtime_normal_limit": {
+          "strict_runtime_unit_normal_check_passed": false,
+          "serialized_glb_normals_unit_length": true,
+          "runtime_geometry_and_normals_identical_to_original_all_nine_frames": true,
+          "finite_runtime_geometry_and_normals": true,
+          "maximum_zero_corner_count_per_sample": 0,
+          "maximum_nonunit_corner_count_per_sample": 480,
+          "minimum_runtime_corner_normal_length": 0.941692240747476,
+          "maximum_runtime_corner_normal_length": 1.0000001672032204,
+          "maximum_unit_length_error": 0.05830775925252396,
+          "description": "Preserved provisional originals have non-unit evaluated normals during skin deformation. All nine sampled positions and normals match the original exactly and remain finite/nonzero. Original setting-image fidelity is unverified."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,787 @@
+{
+  "schema": "yakumigumi.public-file-manifest.v1",
+  "release_tag": "v1.3.0",
+  "scope": "All ZIP files except manifest.json itself. SHA256SUMS.txt covers the model, preview, video, license and validation files.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 7169,
+      "sha256": "f4e7f373b9b996950337e8d41a4a2939c2d90b7725e9baf3d5084a22717ad328"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6662,
+      "sha256": "4b91796f91fdb28489f616205599d10c766d5a3abf94ea74c5e7aba1bbdee21e"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "bytes": 17516,
+      "sha256": "ec1ba78bb9987c5d4c4ed168a88f881931cbe361bc9a6db7c287f3514f33d80c"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 26024,
+      "sha256": "856c94b7d9415a06a4568c456b9843193a51b730f9fbf56574fdf128fe1cada5"
+    },
+    {
+      "path": "characters/Chili/README.md",
+      "bytes": 1276,
+      "sha256": "e01a66d1205597907b6109e3203a9157df02d26592de5ac9451022bd21da85f8"
+    },
+    {
+      "path": "characters/Chili/model.blend",
+      "bytes": 6235476,
+      "sha256": "5695df8c1ed99e4d4ff3bf48c9e24135d468b8126a6c3f1635483d3a319ab663"
+    },
+    {
+      "path": "characters/Chili/model.glb",
+      "bytes": 2619956,
+      "sha256": "71f6047a8d5fd3037953f193c4aee2a3d98915ccb44c8b6405938f110f4db97f"
+    },
+    {
+      "path": "characters/Chili/motion_1080p.mp4",
+      "bytes": 220865,
+      "sha256": "0b204206c4a14d9169fce6e240d6f07623588f061e7893105057b9fa9c30a54e"
+    },
+    {
+      "path": "characters/Chili/previews/Chili_back_1080.png",
+      "bytes": 143532,
+      "sha256": "d7529a1f04513559b3295b56b0583c6c1cb9c19798d82309cd2e835f6aacb4d0"
+    },
+    {
+      "path": "characters/Chili/previews/Chili_four_views.png",
+      "bytes": 253964,
+      "sha256": "72ee3e57d9a92af64c4b04e65f5967e1546458ee97a42eaf5e773efc33ad7014"
+    },
+    {
+      "path": "characters/Chili/previews/Chili_front_1080.png",
+      "bytes": 151338,
+      "sha256": "751bcc7a58c82de5ccc67c2a3a692d71c51c01e545d546aaafb3df3797925ccc"
+    },
+    {
+      "path": "characters/Chili/previews/Chili_side_1080.png",
+      "bytes": 94270,
+      "sha256": "46f2d0eab84842437c9678c59604036be0ecc62ecddec4987d6561180c32cf95"
+    },
+    {
+      "path": "characters/Chili/previews/Chili_three_quarter_1080.png",
+      "bytes": 136638,
+      "sha256": "e6e647afa420cfca84c0b2710798b9de1a439bec5ac40a87c364188d08568144"
+    },
+    {
+      "path": "characters/Chili/textures/Chili brown drawn edge.png",
+      "bytes": 3829,
+      "sha256": "585d7224e5ba032f87582deb38f8edbb7aec3b0684bce1200ced9e535959ce61"
+    },
+    {
+      "path": "characters/Chili/textures/Chili own broad coral red and pink brush wash paint final.png",
+      "bytes": 128305,
+      "sha256": "cf57f5e29b063bd9a11bbeeb36a2af014baf32fe34bcfedba2369fe965fa5d51"
+    },
+    {
+      "path": "characters/Chili/textures/Chili slender green curved stem wash.png",
+      "bytes": 83576,
+      "sha256": "42ac17dd199d241cee28a064477673b7dd5d07ad256a4e70a08078628752c5fa"
+    },
+    {
+      "path": "characters/Chili/textures/Chili soft green flattened calyx wash.png",
+      "bytes": 83681,
+      "sha256": "43b0ec7ffb9e55674a505b15b0d344de81841de8b8ec90cca42daba103ac160b"
+    },
+    {
+      "path": "characters/Daikon/README.md",
+      "bytes": 1292,
+      "sha256": "aa0739e16342431eca72fd4ba994d239554be4b6d1227e5c3872e222b41ff9ef"
+    },
+    {
+      "path": "characters/Daikon/model.blend",
+      "bytes": 4858396,
+      "sha256": "15d6202a9a0819831cca924ec5bf349736a46aac93b714fde4c8be0935e6685b"
+    },
+    {
+      "path": "characters/Daikon/model.glb",
+      "bytes": 2015088,
+      "sha256": "71badf08f7ddb6ff642f03860a20b040e71e9bc2064f67ba2ebe4814c7f1226c"
+    },
+    {
+      "path": "characters/Daikon/motion_1080p.mp4",
+      "bytes": 627344,
+      "sha256": "78b8f1a327d5e6fa1f51218e71351bd65c5c11d0b7b9e6d104f7a054f26ef5ae"
+    },
+    {
+      "path": "characters/Daikon/previews/Daikon_back_1080.png",
+      "bytes": 323274,
+      "sha256": "b1812c2741d706e9ce08e23813a82474aa158eeb92dfa4b31d02fa38e291d5f9"
+    },
+    {
+      "path": "characters/Daikon/previews/Daikon_four_views.png",
+      "bytes": 516296,
+      "sha256": "a3ec4b14d2acfae5587ef68f64604840617a7cb61d0e60644e260ccdc1108dbb"
+    },
+    {
+      "path": "characters/Daikon/previews/Daikon_front_1080.png",
+      "bytes": 326285,
+      "sha256": "03233a56475c51519b7ea0365eb243e5a73549668e56a070c317e5d24c960afd"
+    },
+    {
+      "path": "characters/Daikon/previews/Daikon_side_1080.png",
+      "bytes": 257868,
+      "sha256": "77a1ab62481357598772b0152ff7c16f503851151e1caf44246e2e2a13b34480"
+    },
+    {
+      "path": "characters/Daikon/previews/Daikon_three_quarter_1080.png",
+      "bytes": 328162,
+      "sha256": "a5e8f8adf27e67468bdac8da0138e73c6cefae7f1a0b3eccd4b0850efe4aae3e"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon brown drawn edge.png",
+      "bytes": 3829,
+      "sha256": "585d7224e5ba032f87582deb38f8edbb7aec3b0684bce1200ced9e535959ce61"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon ivory root with pale green shoulder.png",
+      "bytes": 104891,
+      "sha256": "de22e22e3e32b2d49fdf892c47a2655b25328de8f0f2884893651e8fc00343a0"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon light blue oval cheeks.png",
+      "bytes": 3675,
+      "sha256": "994ddc50d352b9c22156db9ca751e58cb497244230213f64128b7a5af1bd19d8"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon light silver grater rim.png",
+      "bytes": 81046,
+      "sha256": "8817779a7009fb085d1ba79a2748d0dba9f47d0d66569c3e75c8c9150141cf22"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon pale green flat leaf cuts.png",
+      "bytes": 82709,
+      "sha256": "2f0954f13d1e5aee5c0e98a9428c6d88dcb73fff49a1cced6ec612ce10a92b13"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon soft green short cut stalks.png",
+      "bytes": 99464,
+      "sha256": "fc703b076a0e5837f1141c01f5fa3c417f8eadd58b56991a95ac673b66bc5bc7"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon soft grey grater teeth.png",
+      "bytes": 3761,
+      "sha256": "a8f0c2c7f9d503313f5c1074e4128c890388d0adb27ed14d2fa0dd49f980fcb1"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon soft painted metallic grey grater.png",
+      "bytes": 83351,
+      "sha256": "4114bde47fd7d9805616c612a009465caa019cbe13a5cb042466304635d21d5e"
+    },
+    {
+      "path": "characters/Daikon/textures/Daikon warm white highlights.png",
+      "bytes": 3105,
+      "sha256": "3e68534b221807751bd8ba7402e359116e124eaef2fc55cefa7dccb13e13dcd9"
+    },
+    {
+      "path": "characters/Garlic/README.md",
+      "bytes": 1345,
+      "sha256": "1322d43e10554b3fca4342cf0bf173eac5db2965471cf205eca65a550d414611"
+    },
+    {
+      "path": "characters/Garlic/model.blend",
+      "bytes": 4841594,
+      "sha256": "0bf5ebeb96e1f2c864b4d11bde69eb312d656d8b3efe1ad07b323c4deb1cc141"
+    },
+    {
+      "path": "characters/Garlic/model.glb",
+      "bytes": 4343932,
+      "sha256": "915f3b5b00ee40a004d6dd615f9cfe78665bf5551f71db6c0c03bf1a6c691453"
+    },
+    {
+      "path": "characters/Garlic/motion_1080p.mp4",
+      "bytes": 369929,
+      "sha256": "514eb259d6d91715fc2505c1b8c7270b56b99bf4511cf2b109c97dabdb66ef92"
+    },
+    {
+      "path": "characters/Garlic/previews/Garlic_1080p_hop.png",
+      "bytes": 987248,
+      "sha256": "6a85a06077c948bd692f98b2920d91c7948961860944714a7bf76b552ef1a898"
+    },
+    {
+      "path": "characters/Garlic/previews/Garlic_1080p_tilt.png",
+      "bytes": 989392,
+      "sha256": "a360126ce8a24dd7d2c1c222a1e144ba26b2c18d20b540beb40608ceaa2a8ac2"
+    },
+    {
+      "path": "characters/Garlic/previews/Garlic_1080p_trial.png",
+      "bytes": 987265,
+      "sha256": "c9dc6c56f6ae7a19275669723d404aaf08d491c00072ee872b54c39147b5bdc3"
+    },
+    {
+      "path": "characters/Garlic/textures/Garlic_eye_paint.png",
+      "bytes": 3821,
+      "sha256": "1a019f60363041ee729baf88e5c0afd939ffa5b22f5684865a9509b0c5c178d6"
+    },
+    {
+      "path": "characters/Ginger/README.md",
+      "bytes": 1382,
+      "sha256": "d016e2ab8b262277a4964ac915fe3b0244d54f152d6f51739e1a471a6eeb7955"
+    },
+    {
+      "path": "characters/Ginger/model.blend",
+      "bytes": 39454297,
+      "sha256": "1af4fd440e05bef096d51b2a69a025ea63aaea8f14d92cafc9c7b604ea03449b"
+    },
+    {
+      "path": "characters/Ginger/model.glb",
+      "bytes": 26311984,
+      "sha256": "a873e5b1b803c3b95521d6f9bc53c618d536135507ba61fca826244210b0f19f"
+    },
+    {
+      "path": "characters/Ginger/motion_1080p.mp4",
+      "bytes": 325752,
+      "sha256": "741fa8a1036f152087f4d5f676259e7af314860702c0980e49798d68a4c5730c"
+    },
+    {
+      "path": "characters/Ginger/previews/Ginger_1080p_arms.png",
+      "bytes": 1018192,
+      "sha256": "47e1a524615db346d2a4643ffce8fc3b615f6aa03eaaf15d696f615f756eb63c"
+    },
+    {
+      "path": "characters/Ginger/previews/Ginger_1080p_legs.png",
+      "bytes": 1018276,
+      "sha256": "a9490142d52d31f3c298d28b7f59fa85075f7510406d48232d6558e405b6d0aa"
+    },
+    {
+      "path": "characters/Ginger/previews/Ginger_1080p_trial.png",
+      "bytes": 1017465,
+      "sha256": "1ad28816c278b4cb14fd6de594093b2bad452cb14f7892bef90a992337ff66fc"
+    },
+    {
+      "path": "characters/Ginger/textures/Ginger_pigment_v13.png",
+      "bytes": 220803,
+      "sha256": "d0fb0e986f6dee85470d95cf1215ac1c888c010e3bfee034ce25679ebb864ff7"
+    },
+    {
+      "path": "characters/Ginger/textures/Ginger_pigment_v20.png",
+      "bytes": 1775110,
+      "sha256": "8a39e80e8884c9b49967fe9b36e699833d0d8b5785fb17b43954ed5d99de383f"
+    },
+    {
+      "path": "characters/Mustard/README.md",
+      "bytes": 1284,
+      "sha256": "b197b27a09adba390ac2f8d9945d601d3db74210949e96ebb49a9e67422e19f9"
+    },
+    {
+      "path": "characters/Mustard/model.blend",
+      "bytes": 3180032,
+      "sha256": "aa72c501ed702d834c6ff7a9175146a74896a2e6908161a40ec02d76001ff82c"
+    },
+    {
+      "path": "characters/Mustard/model.glb",
+      "bytes": 1154880,
+      "sha256": "a3eb2af6834e3722466d6be98d5ab07d6a474b25ec6605f32faf6e648120b365"
+    },
+    {
+      "path": "characters/Mustard/motion_1080p.mp4",
+      "bytes": 270789,
+      "sha256": "940b97cef5567dd37c087951f96086ab5323c43c18841e6ed59743566aadd675"
+    },
+    {
+      "path": "characters/Mustard/previews/Mustard_back_1080.png",
+      "bytes": 209749,
+      "sha256": "9dd9b3c17e2f0ac05ddbae189a6a837cc7a5deebe228188a5ab3ecc4cb9d03b9"
+    },
+    {
+      "path": "characters/Mustard/previews/Mustard_four_views.png",
+      "bytes": 314859,
+      "sha256": "95cf9801bc48fd08a194db08ceb92e9412559dd74cc70eac86296fe3a7e00b32"
+    },
+    {
+      "path": "characters/Mustard/previews/Mustard_front_1080.png",
+      "bytes": 214350,
+      "sha256": "a9d0280be62debc33872ed989011e073a0d39a1a2a249e68f647e0fa9abf610e"
+    },
+    {
+      "path": "characters/Mustard/previews/Mustard_side_1080.png",
+      "bytes": 119627,
+      "sha256": "b5d2efee3abdc7b21e9b6d1965f91e39089b2912885746aa9c5db3a385806303"
+    },
+    {
+      "path": "characters/Mustard/previews/Mustard_three_quarter_1080.png",
+      "bytes": 194545,
+      "sha256": "8d8cea907734334834d75ebddfaad9c871871e8385a8a043cc2f71ca667e388c"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard broad hand-painted yellow and orange bands v2.png",
+      "bytes": 147956,
+      "sha256": "f31657a1cdab02d565b7d9bb5f32418daa3f7dbfd7c797a01dc28038b383a7f7"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard brown drawn edge.png",
+      "bytes": 3829,
+      "sha256": "585d7224e5ba032f87582deb38f8edbb7aec3b0684bce1200ced9e535959ce61"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard pale yellow cap top.png",
+      "bytes": 3796,
+      "sha256": "fa981f9ecd37dc1f8fa61f2ad8ae33b1df24a563297c6b09c896a215c368ed91"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard soft pink lower smile inside.png",
+      "bytes": 3694,
+      "sha256": "56ab05a81b8458685f3800fa670cd6daf50c04447ea3c16532617922d251d769"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard subtle ochre cap grooves.png",
+      "bytes": 3786,
+      "sha256": "bfeb23e7d02baac68e648e918adb9260ac2675a1c40f85a708383e7ba651e610"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard subtle ochre sealed crimp marks.png",
+      "bytes": 3769,
+      "sha256": "7b2c159597932505877b0c309a7d91fe9383dc9dc88c4ae4c22c90af17c59f17"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard warm orange red smile inside.png",
+      "bytes": 3378,
+      "sha256": "53d1878668abd3bf01956b637730fc8ff3043d7b40c1d519a1f1858ec3914637"
+    },
+    {
+      "path": "characters/Mustard/textures/Mustard warm yellow nozzle and cap.png",
+      "bytes": 82264,
+      "sha256": "ac86ccb41f1bf2eb9d8e6ab0cbcbc20793d3072c5636c959e42cc2e62370801a"
+    },
+    {
+      "path": "characters/Myoga/README.md",
+      "bytes": 1767,
+      "sha256": "e4d67df7d68bc4e3b65ba540b380e8a8233dbb403a4b29da2c7ca50ac56fec17"
+    },
+    {
+      "path": "characters/Myoga/model.blend",
+      "bytes": 1813944,
+      "sha256": "4317ccbd1f8b6a500e744b500af2a4432d0b106ba4d7cf51298d7734f4405772"
+    },
+    {
+      "path": "characters/Myoga/model.glb",
+      "bytes": 1155188,
+      "sha256": "2e20ee5c4e9bb0e11600beab327f3c5542b5a304a5ecae1ab1d2703ef0084959"
+    },
+    {
+      "path": "characters/Myoga/previews/Myoga_glb_arms.png",
+      "bytes": 141509,
+      "sha256": "698c014704c0a874f62505ae4879e0c4843d6172d33df29b644b37d6b01f217c"
+    },
+    {
+      "path": "characters/Myoga/previews/Myoga_glb_rest.png",
+      "bytes": 141511,
+      "sha256": "68a55699e089c03c59689c52827c837e0ef6e260dc27797727c00aec1d26d6a9"
+    },
+    {
+      "path": "characters/Myoga/previews/Myoga_rigged_arms.png",
+      "bytes": 135043,
+      "sha256": "ae2fc415fc3159ede96583285f240d065ad36b7af21b2c8af46fd509b3e93cc5"
+    },
+    {
+      "path": "characters/Myoga/previews/Myoga_rigged_legs.png",
+      "bytes": 134869,
+      "sha256": "9647853d51c34884cc8a67592a50241a341fc19f08399bbc636fe55ffe8b81e7"
+    },
+    {
+      "path": "characters/Myoga/previews/Myoga_rigged_rest.png",
+      "bytes": 135051,
+      "sha256": "5567d1ce0c8f22cbba0e99da85e49121a0387849f37c6c8d7dde86bd2bacdf5f"
+    },
+    {
+      "path": "characters/Myoga/textures/Myoga_pencil_body.png",
+      "bytes": 369323,
+      "sha256": "9c2332d5face6c393c59090d380b355fd67a31e41d7f703617eba9b388a672b5"
+    },
+    {
+      "path": "characters/Myoga/textures/Myoga_pencil_cocoa.png",
+      "bytes": 21871,
+      "sha256": "c3e14d5ce6bd7510671acf58d673f72991c23c8a6cc5a41b0736cac81beecb2b"
+    },
+    {
+      "path": "characters/Myoga/textures/Myoga_pencil_hand.png",
+      "bytes": 23895,
+      "sha256": "8b966b775bbc5d60a31ecea9307d7234b6deb5b44fe3622008978e6d33c3156c"
+    },
+    {
+      "path": "characters/Myoga/textures/Myoga_pencil_leafpink.png",
+      "bytes": 88338,
+      "sha256": "594b04c535d50b3254d06c6b047307e4745465658674734853b8df2a811fce9f"
+    },
+    {
+      "path": "characters/Myoga/textures/Myoga_pencil_white.png",
+      "bytes": 20764,
+      "sha256": "fcfecb67200fc0b4d274d43c296a47d28491f229ad567deb53d9035e33eeb1b7"
+    },
+    {
+      "path": "characters/Negi/README.md",
+      "bytes": 1266,
+      "sha256": "30cebc7f009c888f4e678665727e5b111cdd69671608f31d80244c1b13634d4a"
+    },
+    {
+      "path": "characters/Negi/model.blend",
+      "bytes": 14016204,
+      "sha256": "580fe6c8f67e603e532c6bd48fa421c591195a6f87aa091a1b36b6771155bae5"
+    },
+    {
+      "path": "characters/Negi/model.glb",
+      "bytes": 5904536,
+      "sha256": "b8016f48b8a3f395fdfb21c51df2270e3be81c1324f1d20d44c4626680d77621"
+    },
+    {
+      "path": "characters/Negi/motion_1080p.mp4",
+      "bytes": 209025,
+      "sha256": "0cfa1cb28c0672eec2a6b4bc55ca3fce6ab4ad24fe3c07d318300ea3f087f9b4"
+    },
+    {
+      "path": "characters/Negi/previews/Negi_back_1080.png",
+      "bytes": 185295,
+      "sha256": "19cfbd1d09eb05f56a6de8bbbc7010d3f802c8fc7bb4895b2508c3dea931eee1"
+    },
+    {
+      "path": "characters/Negi/previews/Negi_four_views.png",
+      "bytes": 306149,
+      "sha256": "12b49be622bc4e6846fac632c1cb25bd7f52d8ad535352fcdad0f5d2887985b2"
+    },
+    {
+      "path": "characters/Negi/previews/Negi_front_1080.png",
+      "bytes": 196092,
+      "sha256": "e0d42c5244edd4249e1780fbe696954e954c3f09fc92ef543b847a15dc7fd1c4"
+    },
+    {
+      "path": "characters/Negi/previews/Negi_side_1080.png",
+      "bytes": 138244,
+      "sha256": "2ea49adcca6e54b6c7b40c226a487c86a9cc4f629d2fe3ac6e2587b338fd21cb"
+    },
+    {
+      "path": "characters/Negi/previews/Negi_three_quarter_1080.png",
+      "bytes": 180797,
+      "sha256": "b57c0d32aecd224e096df8d0a9ae77e3ce48b91bbaa0079925911a742339559f"
+    },
+    {
+      "path": "characters/Negi/textures/Negi brown drawn edge.png",
+      "bytes": 3829,
+      "sha256": "585d7224e5ba032f87582deb38f8edbb7aec3b0684bce1200ced9e535959ce61"
+    },
+    {
+      "path": "characters/Negi/textures/Negi muted red mouth.png",
+      "bytes": 3827,
+      "sha256": "a968ced4f83dc1aa92d70989286fe085512664e304f3128122ee895856ab19a4"
+    },
+    {
+      "path": "characters/Negi/textures/Negi pale green open cut.png",
+      "bytes": 3828,
+      "sha256": "4e7cf7c66070f184a73a75e32028f5914d1dec2eeb5771db92d3f6f84941d365"
+    },
+    {
+      "path": "characters/Negi/textures/Negi pink lower mouth.png",
+      "bytes": 3321,
+      "sha256": "05c764b41119c978769acc08824045963516a6e187305e43de1f0c5d77126f7c"
+    },
+    {
+      "path": "characters/Negi/textures/Negi warm white highlights.png",
+      "bytes": 3105,
+      "sha256": "3e68534b221807751bd8ba7402e359116e124eaef2fc55cefa7dccb13e13dcd9"
+    },
+    {
+      "path": "characters/Negi/textures/Negi white to green broad pencil wash.png",
+      "bytes": 122106,
+      "sha256": "cfb01522803d57dd0c5174b47f7ced889fea0616cfdc6b347d86ef8e92c15383"
+    },
+    {
+      "path": "characters/Okra/README.md",
+      "bytes": 1759,
+      "sha256": "0d928d968de11703098b3a154801efc09856c21c6b930d1bbee338378be6e2e4"
+    },
+    {
+      "path": "characters/Okra/model.blend",
+      "bytes": 1823580,
+      "sha256": "285f8618606ee3473c763158f051634126dcd2e1b248cc7ff62912f941588cc5"
+    },
+    {
+      "path": "characters/Okra/model.glb",
+      "bytes": 856444,
+      "sha256": "5811ab4c4b6138a3eebee80dba418363ebeff37e511f36222e7bc9515ae5e627"
+    },
+    {
+      "path": "characters/Okra/previews/Okra_glb_arms.png",
+      "bytes": 149561,
+      "sha256": "dc8c3b9552fcd31a6a8b3ac2ae44bc4dc38ae225ddeef76ad3da36d5aaa0f173"
+    },
+    {
+      "path": "characters/Okra/previews/Okra_glb_rest.png",
+      "bytes": 149714,
+      "sha256": "c26205034c0293636db3c54a5dc8d4d56165384db340c90c92e8dfc7ba6d9f40"
+    },
+    {
+      "path": "characters/Okra/previews/Okra_rigged_arms.png",
+      "bytes": 146724,
+      "sha256": "78901cae0540e05b92a91f9b9ed22d1b44b68f63701fe04755d2b4952a1809c1"
+    },
+    {
+      "path": "characters/Okra/previews/Okra_rigged_legs.png",
+      "bytes": 146712,
+      "sha256": "a78eed6f10562c23339b9aa431c70c21ecceed5f8213606804212e377a516e33"
+    },
+    {
+      "path": "characters/Okra/previews/Okra_rigged_rest.png",
+      "bytes": 146742,
+      "sha256": "1b188e4be30282a15953704f6b076786c65be835f0f68c1646b54a54ab9d83f7"
+    },
+    {
+      "path": "characters/Okra/textures/Okra_pencil_body.png",
+      "bytes": 365114,
+      "sha256": "2355e66d059a1d9df9883880f614bc6be0470f3160edf2cf72ba8f4b4ea55cbd"
+    },
+    {
+      "path": "characters/Okra/textures/Okra_pencil_cocoa.png",
+      "bytes": 21792,
+      "sha256": "463a4d0f070bb068ae6e7d613cefb77abd8019213a17d77ee916f2ad0a0552c0"
+    },
+    {
+      "path": "characters/Okra/textures/Okra_pencil_cut.png",
+      "bytes": 21713,
+      "sha256": "a5b19329622c8079c09c74216ccda3045d3df3b64247336dd35980710dd0dd5e"
+    },
+    {
+      "path": "characters/Okra/textures/Okra_pencil_hand.png",
+      "bytes": 23692,
+      "sha256": "5d9d57a9bb27e0d189a1693d032c7a9fd1a90f16884e1579313763dbf3082f9a"
+    },
+    {
+      "path": "characters/Okra/textures/Okra_pencil_white.png",
+      "bytes": 20731,
+      "sha256": "026652cb0e64a3f4a590f0a0e85314c643ec1cf45cfe28f079b83c5fff10355c"
+    },
+    {
+      "path": "characters/Sansho/README.md",
+      "bytes": 1364,
+      "sha256": "16cdb3426c759e066285cb22408cffa22210b910d1f5934f43a48661df194cbb"
+    },
+    {
+      "path": "characters/Sansho/model.blend",
+      "bytes": 27349140,
+      "sha256": "185c6e7c3713c975b29fae653f51a775d9515b1cae94e5a61607bcfde981d671"
+    },
+    {
+      "path": "characters/Sansho/model.glb",
+      "bytes": 13683792,
+      "sha256": "780ecb2e9af78119b8136f1c50cd88b25a2de6a412d4e6b712fbb41fa7e8204c"
+    },
+    {
+      "path": "characters/Sansho/motion_1080p.mp4",
+      "bytes": 299035,
+      "sha256": "e76748147c1538e267befa32c0d1569e6fc79fa65b862ab4336ca1f8a3acf048"
+    },
+    {
+      "path": "characters/Sansho/previews/Sansho_back_1080.png",
+      "bytes": 224380,
+      "sha256": "0d36b82cef5ea46f3f75fc39b712741c5af85b72c0880e01fe3a3995c4b92c6d"
+    },
+    {
+      "path": "characters/Sansho/previews/Sansho_four_views.png",
+      "bytes": 1026286,
+      "sha256": "593d2db9e44bf22ca8f30b7497e9e3441e86827e36620e89e96810b3b56c3c8e"
+    },
+    {
+      "path": "characters/Sansho/previews/Sansho_front_1080.png",
+      "bytes": 231080,
+      "sha256": "4a5bb60cc7e6e6cd7a79b19c108b11c8acff4ac3c293af40ae23dd9cbe2b7125"
+    },
+    {
+      "path": "characters/Sansho/previews/Sansho_side_1080.png",
+      "bytes": 116165,
+      "sha256": "1607eb96918157f1d4bf700be7b7e7a244158c3219c2d0f1ae50f257f5a368de"
+    },
+    {
+      "path": "characters/Sansho/previews/Sansho_three_quarter_1080.png",
+      "bytes": 213315,
+      "sha256": "398a3ddf5dd67b0e9fd7080bb27010f6ad4cbbe0ea6c300d16c3547f78c70773"
+    },
+    {
+      "path": "characters/Sansho/textures/Sansho original warm brown outline.png",
+      "bytes": 3458,
+      "sha256": "f9cea26f6578eb999235454c539380672d878d86f5f10990888eaa25b0d6554f"
+    },
+    {
+      "path": "characters/Sansho/textures/Sansho original white circle eye fill without pupils.png",
+      "bytes": 2932,
+      "sha256": "738ea84a69385ac216069f6159ff44325a4fbe845735b1f35c7be2c1ff556151"
+    },
+    {
+      "path": "characters/Sansho/textures/Sansho pale cyan broad original pencil washes.png",
+      "bytes": 94111,
+      "sha256": "42aed57f0a9763b4b2c7377161a0fb605a9c1a78b05018650b328db6bb4b8185"
+    },
+    {
+      "path": "characters/Sansho/textures/Sansho soft blue violet original lobed tail edge.png",
+      "bytes": 80243,
+      "sha256": "00c0ad2e046aa0bccd3a821edbf0632846c661bc385316f9abff65437dd89ceb"
+    },
+    {
+      "path": "characters/Wasabi/README.md",
+      "bytes": 1280,
+      "sha256": "395e5ef0d3410a21dfaaa68736bb8af971388c97300a36a7aecbe47c5832a5dd"
+    },
+    {
+      "path": "characters/Wasabi/model.blend",
+      "bytes": 6991296,
+      "sha256": "f1bf58ee181a112b1f45afc82f6a7254bc99ae39d102bb116d6194c3f473cbe6"
+    },
+    {
+      "path": "characters/Wasabi/model.glb",
+      "bytes": 2758844,
+      "sha256": "8506799cada68acf70bb4283a1ee3fc9d08a2872729fdd750d41acb1a50e1449"
+    },
+    {
+      "path": "characters/Wasabi/motion_1080p.mp4",
+      "bytes": 307379,
+      "sha256": "cb35f53c6ded234a0d81e64037aa718fea54c779b463d325c31cfe521e1c6eb5"
+    },
+    {
+      "path": "characters/Wasabi/previews/Wasabi_back_1080.png",
+      "bytes": 307729,
+      "sha256": "ded916c15451c12aa4f4c01ca090807f56f49f701188051919f6ac8bacc52aa5"
+    },
+    {
+      "path": "characters/Wasabi/previews/Wasabi_four_views.png",
+      "bytes": 488549,
+      "sha256": "c2d1fdeceec4cb723ddfff68a060efb92d84b0c7a0456a2b6679205cb446fef7"
+    },
+    {
+      "path": "characters/Wasabi/previews/Wasabi_front_1080.png",
+      "bytes": 318317,
+      "sha256": "8642b03f30e31a8fc5235c9910a40569ebac75dffa89b9559f087051698432dd"
+    },
+    {
+      "path": "characters/Wasabi/previews/Wasabi_side_1080.png",
+      "bytes": 223694,
+      "sha256": "452aebe28d7dbdb074faff8fe6acb5efd26f0b274cd59e1124e2a2ddc091e525"
+    },
+    {
+      "path": "characters/Wasabi/previews/Wasabi_three_quarter_1080.png",
+      "bytes": 291064,
+      "sha256": "09a1d60ebd473550e42413df1f71045f68482b69419a55e5b43779c9f2f17f85"
+    },
+    {
+      "path": "characters/Wasabi/textures/Wasabi brown drawn edge.png",
+      "bytes": 3121,
+      "sha256": "2a769147d83d60aac01c789074c3195b40f016ae8c0a4d96a1f75b849b50dd28"
+    },
+    {
+      "path": "characters/Wasabi/textures/Wasabi green stalk paint.png",
+      "bytes": 4014,
+      "sha256": "c3a18414edc7fa4f2f778a91c48baad2463233631c738c95de88c3829673edad"
+    },
+    {
+      "path": "characters/Wasabi/textures/Wasabi pale flat cut paint.png",
+      "bytes": 4013,
+      "sha256": "dbe9001a6f64566149bac0c094eae196dd4464c540d46c6a7a080633aa0def04"
+    },
+    {
+      "path": "characters/Wasabi/textures/Wasabi pale yellow green handmade paint.png",
+      "bytes": 146225,
+      "sha256": "affac2df0d47f4a0482c39ca49a7b184d59f53028cd1792dda9bc4541ab3d92b"
+    },
+    {
+      "path": "characters/Wasabi/textures/Wasabi small muted red mouth.png",
+      "bytes": 3625,
+      "sha256": "47245c4d3f91d7689f8b07b8c860c3df15b7434429c2a5e6ed509ea74862f04e"
+    },
+    {
+      "path": "characters/Wasabi/textures/Wasabi warm white highlights.png",
+      "bytes": 3168,
+      "sha256": "6e8799b1978e402282b731689bd4c7bee2f7bc423d2b2df9112ba698d2ca9d4a"
+    },
+    {
+      "path": "characters/Yuzu/README.md",
+      "bytes": 1266,
+      "sha256": "9c331419195e9cf1d778147bcd494d67de6aa1f385f963454f48ed87be4963db"
+    },
+    {
+      "path": "characters/Yuzu/model.blend",
+      "bytes": 6171492,
+      "sha256": "5af43535672923522c4e45965dcb6e2be69f955c2136337511d416d83f2e67f0"
+    },
+    {
+      "path": "characters/Yuzu/model.glb",
+      "bytes": 2350096,
+      "sha256": "fd944492187c979c3ffb0260770f15f1a2ec70c79bbe7591e1c3fe745ca74808"
+    },
+    {
+      "path": "characters/Yuzu/motion_1080p.mp4",
+      "bytes": 410310,
+      "sha256": "bba92957f7ab56bf5b69ff3ddf274d9d0943ef302bfdb8929b29f2f5ff85e5be"
+    },
+    {
+      "path": "characters/Yuzu/previews/Yuzu_back_1080.png",
+      "bytes": 360891,
+      "sha256": "618022940b267860492f7808540e7caf8e21eebf1e05aa54933bfe8a4c738ef3"
+    },
+    {
+      "path": "characters/Yuzu/previews/Yuzu_four_views.png",
+      "bytes": 558369,
+      "sha256": "338b2a608b070f928259588b2ffd2a8974b310c35cb1584df8988230e2c83eb5"
+    },
+    {
+      "path": "characters/Yuzu/previews/Yuzu_front_1080.png",
+      "bytes": 381610,
+      "sha256": "0ff438e59deaaba367f3b519abec5b4791e9ccba8498455f85d45b329cc0882a"
+    },
+    {
+      "path": "characters/Yuzu/previews/Yuzu_side_1080.png",
+      "bytes": 332171,
+      "sha256": "6cd2d474c3c9789a3a4fe81fdf20ecb4f2864b8d99ae00f7f0a0d1dcc521e08f"
+    },
+    {
+      "path": "characters/Yuzu/previews/Yuzu_three_quarter_1080.png",
+      "bytes": 365020,
+      "sha256": "86ed5eaf2bff5c382f397a3de40b193813fd6f8d8a197f6fb3132369c356bf48"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu brown drawn edge.png",
+      "bytes": 3829,
+      "sha256": "585d7224e5ba032f87582deb38f8edbb7aec3b0684bce1200ced9e535959ce61"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu brown purple oval eyes.png",
+      "bytes": 3831,
+      "sha256": "7eb7c3752b52d7ba3419f65146d34041a402c7c2e9515017cdb0fca7acca2feb"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu small soft ochre eye reflections.png",
+      "bytes": 3827,
+      "sha256": "8292b93008b54639d59074cf586ea9979fda4dc541f3894ca423395d5a0afb7f"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu small warm brown cheek freckles.png",
+      "bytes": 3552,
+      "sha256": "85733c8e57d84e5c13d76026d37aee2a72924a035ad5f0d133d026d31b6bff81"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu soft green single stem.png",
+      "bytes": 83244,
+      "sha256": "10d153bb6f6aadbce36a53515f96cd3608f9b846474d257ef76cb9d3f225912c"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu warm brown thin facial ink.png",
+      "bytes": 3388,
+      "sha256": "8782723f7b0cc6fc42cfed0a0742644617969fa8b29ac6bafcc69e358e7220bb"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu warm white highlights.png",
+      "bytes": 3105,
+      "sha256": "3e68534b221807751bd8ba7402e359116e124eaef2fc55cefa7dccb13e13dcd9"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu yellow green flattened calyx.png",
+      "bytes": 83753,
+      "sha256": "8dbbb58049070882ee385ec8e5bac2c5587df4494adb08b0c39d7f436ffa2189"
+    },
+    {
+      "path": "characters/Yuzu/textures/Yuzu_broad_rind_paint.png",
+      "bytes": 161539,
+      "sha256": "83570784a1735c7f8c1006e4781f8eb32601794691100887aa67707f4eefd9a5"
+    }
+  ]
+}
